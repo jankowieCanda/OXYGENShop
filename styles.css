@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  border: none;
+  background-color: grey;
+  color: #FFFFFF;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2901960784);
+  text-align: center;
+  margin-bottom: 100px;
+}
+.header__title, .header__menu-logo {
+  display: inline;
+  margin-top: 2px;
+}
+.header__title {
+  width: 70%;
+  float: left;
+}
+.header__title #title {
+  margin: 15px 0;
+  color: #08A6E4;
+}
+.header__menu-logo {
+  width: 20%;
+  float: right;
+}
+.header__menu-logo #menu {
+  width: 20px;
+  height: 12px;
+  margin: 25px 0;
+}
+
+.main {
+  text-align: center;
+}
+.main .opening-section {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.main .opening-section__title {
+  margin-bottom: 20px;
+}
+.main .opening-section__descrip {
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+.main .opening-section .btn--section-opening {
+  width: 100%;
+  height: 67px;
+  border-radius: 40px;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
+}
+.main .popular-data {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.main .popular-data__title {
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+.main .popular-data__column1, .main .popular-data__column2, .main .popular-data__column3 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main .popular-data__column1 .column1__img, .main .popular-data__column1 .column2__img, .main .popular-data__column1 .column3__img, .main .popular-data__column2 .column1__img, .main .popular-data__column2 .column2__img, .main .popular-data__column2 .column3__img, .main .popular-data__column3 .column1__img, .main .popular-data__column3 .column2__img, .main .popular-data__column3 .column3__img {
+  width: 60%;
+}
+.main .groups {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.main .groups .group1, .main .groups .group2, .main .groups .group3 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.main .groups .group1__img, .main .groups .group1__title, .main .groups .group1__descrip, .main .groups .group2__img, .main .groups .group2__title, .main .groups .group2__descrip, .main .groups .group3__img, .main .groups .group3__title, .main .groups .group3__descrip {
+  margin-bottom: 20px;
+}
+.main .groups .group1__img #macbook, .main .groups .group1__title #macbook, .main .groups .group1__descrip #macbook, .main .groups .group2__img #macbook, .main .groups .group2__title #macbook, .main .groups .group2__descrip #macbook, .main .groups .group3__img #macbook, .main .groups .group3__title #macbook, .main .groups .group3__descrip #macbook {
+  position: absolute;
+  margin-top: 45px;
+  left: 85px;
+}
+.main .groups .group1__img #frame, .main .groups .group1__title #frame, .main .groups .group1__descrip #frame, .main .groups .group2__img #frame, .main .groups .group2__title #frame, .main .groups .group2__descrip #frame, .main .groups .group3__img #frame, .main .groups .group3__title #frame, .main .groups .group3__descrip #frame {
+  margin-left: 135px;
+  margin-bottom: 25px;
+}
+.main .groups .group1__img #iphone, .main .groups .group1__title #iphone, .main .groups .group1__descrip #iphone, .main .groups .group2__img #iphone, .main .groups .group2__title #iphone, .main .groups .group2__descrip #iphone, .main .groups .group3__img #iphone, .main .groups .group3__title #iphone, .main .groups .group3__descrip #iphone {
+  position: absolute;
+  margin: 5px 0 0 -130px;
+}
+.main .groups .group1__img #ellipse, .main .groups .group1__title #ellipse, .main .groups .group1__descrip #ellipse, .main .groups .group2__img #ellipse, .main .groups .group2__title #ellipse, .main .groups .group2__descrip #ellipse, .main .groups .group3__img #ellipse, .main .groups .group3__title #ellipse, .main .groups .group3__descrip #ellipse {
+  margin-left: 70px;
+}
+.main .groups .group1__img #trumpet, .main .groups .group1__title #trumpet, .main .groups .group1__descrip #trumpet, .main .groups .group2__img #trumpet, .main .groups .group2__title #trumpet, .main .groups .group2__descrip #trumpet, .main .groups .group3__img #trumpet, .main .groups .group3__title #trumpet, .main .groups .group3__descrip #trumpet {
+  width: 70%;
+  position: absolute;
+  margin: 25px 0 0 -20px;
+}
+.main .groups .group1__img #rectangle, .main .groups .group1__title #rectangle, .main .groups .group1__descrip #rectangle, .main .groups .group2__img #rectangle, .main .groups .group2__title #rectangle, .main .groups .group2__descrip #rectangle, .main .groups .group3__img #rectangle, .main .groups .group3__title #rectangle, .main .groups .group3__descrip #rectangle {
+  width: 100%;
+}
+.main .pricing {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.main .pricing__title {
+  margin-bottom: 20px;
+}
+.main .pricing__btn {
+  width: 100%;
+  clear: both;
+}
+.main .pricing__basic, .main .pricing__professional, .main .pricing__premium {
+  width: 100%;
+  margin-bottom: 40px;
+  border: solid 1px;
+  border-radius: 18px;
+  height: 251px;
+}
+.main .pricing__basic .features, .main .pricing__professional .features, .main .pricing__premium .features {
+  width: 50%;
+  height: 80%;
+  margin-bottom: 20px;
+  float: right;
+  text-align: left;
+}
+.main .pricing__basic .features__list, .main .pricing__professional .features__list, .main .pricing__premium .features__list {
+  list-style: none;
+  padding-top: 20px;
+}
+.main .pricing__basic .features__list .list-item__capacity, .main .pricing__basic .features__list .list-item__subDom, .main .pricing__basic .features__list .list-item__mail, .main .pricing__basic .features__list .list-item__licence, .main .pricing__basic .features__list .list-item__support, .main .pricing__professional .features__list .list-item__capacity, .main .pricing__professional .features__list .list-item__subDom, .main .pricing__professional .features__list .list-item__mail, .main .pricing__professional .features__list .list-item__licence, .main .pricing__professional .features__list .list-item__support, .main .pricing__premium .features__list .list-item__capacity, .main .pricing__premium .features__list .list-item__subDom, .main .pricing__premium .features__list .list-item__mail, .main .pricing__premium .features__list .list-item__licence, .main .pricing__premium .features__list .list-item__support {
+  line-height: 30px;
+}
+.main .pricing__basic .features__list .list-item__capacity p, .main .pricing__basic .features__list .list-item__subDom p, .main .pricing__basic .features__list .list-item__mail p, .main .pricing__basic .features__list .list-item__licence p, .main .pricing__basic .features__list .list-item__support p, .main .pricing__professional .features__list .list-item__capacity p, .main .pricing__professional .features__list .list-item__subDom p, .main .pricing__professional .features__list .list-item__mail p, .main .pricing__professional .features__list .list-item__licence p, .main .pricing__professional .features__list .list-item__support p, .main .pricing__premium .features__list .list-item__capacity p, .main .pricing__premium .features__list .list-item__subDom p, .main .pricing__premium .features__list .list-item__mail p, .main .pricing__premium .features__list .list-item__licence p, .main .pricing__premium .features__list .list-item__support p {
+  display: inline;
+}
+.main .pricing__basic .price-title, .main .pricing__basic .prices, .main .pricing__professional .price-title, .main .pricing__professional .prices, .main .pricing__premium .price-title, .main .pricing__premium .prices {
+  width: 45%;
+  height: 40%;
+  float: left;
+}
+.main .pricing__basic .price-title, .main .pricing__professional .price-title, .main .pricing__premium .price-title {
+  padding: 75px 10px 0;
+}
+.main .pricing__basic .prices, .main .pricing__professional .prices, .main .pricing__premium .prices {
+  padding: 0 10px 35px;
+}
+.main .pricing__basic .btn--basic-format, .main .pricing__professional .btn--basic-format, .main .pricing__premium .btn--basic-format {
+  background-color: #EB476E;
+}
+.main .pricing__basic .btn--professional-format, .main .pricing__professional .btn--professional-format, .main .pricing__premium .btn--professional-format {
+  background-color: #07ACE6;
+}
+.main .pricing__basic .btn--premium-format, .main .pricing__professional .btn--premium-format, .main .pricing__premium .btn--premium-format {
+  background-color: #55DFB4;
+}
+.main .pricing .basic--border-color {
+  border-color: #EB476E;
+}
+.main .pricing .professional--border-color {
+  border-color: #07ACE6;
+}
+.main .pricing .premium--border-color {
+  border-color: #55DFB4;
+}
+.main .contact {
+  width: 80%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.main .contact__title, .main .contact__data, .main .contact__form {
+  margin-bottom: 20px;
+}
+.main .contact__title p, .main .contact__data p, .main .contact__form p {
+  display: inline;
+  line-height: 27px;
+}
+.main .contact__title img, .main .contact__data img, .main .contact__form img {
+  width: 27px;
+  height: 27px;
+  vertical-align: bottom;
+}
+.main .contact__data-mail, .main .contact__data-phone {
+  padding: 5px 0;
+}
+.main .contact__form {
+  width: 100%;
+}
+.main .contact__form .nameInput, .main .contact__form .emailInput, .main .contact__form .consentCheck {
+  margin-bottom: 20px;
+}
+.main .contact__form .nameInput #nameLabel, .main .contact__form .nameInput #emailLabel, .main .contact__form .nameInput input[type=text], .main .contact__form .nameInput input[type=email], .main .contact__form .emailInput #nameLabel, .main .contact__form .emailInput #emailLabel, .main .contact__form .emailInput input[type=text], .main .contact__form .emailInput input[type=email], .main .contact__form .consentCheck #nameLabel, .main .contact__form .consentCheck #emailLabel, .main .contact__form .consentCheck input[type=text], .main .contact__form .consentCheck input[type=email] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main .contact__form .nameInput #name, .main .contact__form .nameInput #email, .main .contact__form .emailInput #name, .main .contact__form .emailInput #email, .main .contact__form .consentCheck #name, .main .contact__form .consentCheck #email {
+  border: none;
+  border-bottom: 1px solid #95989A;
+}
+.main .contact__form .nameInput #inputDiv, .main .contact__form .emailInput #inputDiv, .main .contact__form .consentCheck #inputDiv {
+  float: left;
+  width: 24px;
+  height: 220px;
+  margin-right: 10px;
+}
+.main .contact__form .nameInput #inputDiv #consent, .main .contact__form .emailInput #inputDiv #consent, .main .contact__form .consentCheck #inputDiv #consent {
+  border-color: #95989A;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+.main .contact__form .nameInput #labelDiv, .main .contact__form .emailInput #labelDiv, .main .contact__form .consentCheck #labelDiv {
+  height: 220px;
+}
+.main .contact__form .btn--submit-format {
+  width: 226px;
+  height: 57px;
+  border-radius: 35px;
+  background-color: #08A6E4;
+  float: right;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
