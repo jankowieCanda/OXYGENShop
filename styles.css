@@ -152,6 +152,9 @@ body {
   margin-bottom: 1.25em;
   padding: 0.9em;
 }
+.groups .group1__img, .groups .group2__img, .groups .group3__img {
+  text-align: center;
+}
 .groups .group1__img, .groups .group1__title, .groups .group1__descrip, .groups .group2__img, .groups .group2__title, .groups .group2__descrip, .groups .group3__img, .groups .group3__title, .groups .group3__descrip {
   margin-bottom: 1.25em;
 }
@@ -168,24 +171,21 @@ body {
 .groups .group1__img #macbook, .groups .group1__title #macbook, .groups .group1__descrip #macbook, .groups .group2__img #macbook, .groups .group2__title #macbook, .groups .group2__descrip #macbook, .groups .group3__img #macbook, .groups .group3__title #macbook, .groups .group3__descrip #macbook {
   position: absolute;
   margin-top: 4em;
-  left: 5.8em;
+  margin-left: 1.5em;
 }
 .groups .group1__img #frame, .groups .group1__title #frame, .groups .group1__descrip #frame, .groups .group2__img #frame, .groups .group2__title #frame, .groups .group2__descrip #frame, .groups .group3__img #frame, .groups .group3__title #frame, .groups .group3__descrip #frame {
-  margin: 1.6em 0 1.6em 8.2em;
+  margin: 1.6em 0 1.6em 7em;
 }
 .groups .group1__img #iphone, .groups .group1__title #iphone, .groups .group1__descrip #iphone, .groups .group2__img #iphone, .groups .group2__title #iphone, .groups .group2__descrip #iphone, .groups .group3__img #iphone, .groups .group3__title #iphone, .groups .group3__descrip #iphone {
   position: absolute;
   margin: 0.5em 0 0 -8.2em;
 }
 .groups .group1__img #ellipse, .groups .group1__title #ellipse, .groups .group1__descrip #ellipse, .groups .group2__img #ellipse, .groups .group2__title #ellipse, .groups .group2__descrip #ellipse, .groups .group3__img #ellipse, .groups .group3__title #ellipse, .groups .group3__descrip #ellipse {
-  margin-left: 3em;
+  margin-left: -2em;
 }
 .groups .group1__img #trumpet, .groups .group1__title #trumpet, .groups .group1__descrip #trumpet, .groups .group2__img #trumpet, .groups .group2__title #trumpet, .groups .group2__descrip #trumpet, .groups .group3__img #trumpet, .groups .group3__title #trumpet, .groups .group3__descrip #trumpet {
   position: absolute;
-  margin: 1.6em 0 0 -2.5em;
-}
-.groups .group1__img #rectangle, .groups .group1__title #rectangle, .groups .group1__descrip #rectangle, .groups .group2__img #rectangle, .groups .group2__title #rectangle, .groups .group2__descrip #rectangle, .groups .group3__img #rectangle, .groups .group3__title #rectangle, .groups .group3__descrip #rectangle {
-  margin-left: -1.3em;
+  margin: 1.6em 0 0 -0.5em;
 }
 
 .pricing {
