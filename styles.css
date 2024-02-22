@@ -205,7 +205,7 @@ body {
   clear: both;
 }
 .pricing__basic, .pricing__professional, .pricing__premium {
-  width: 100%;
+  width: 90%;
   margin-bottom: 2.5em;
   border: solid 1px;
   border-radius: 18px;
@@ -244,7 +244,7 @@ body {
   color: #13253B;
 }
 .pricing__basic .price-title .amount--basic-color, .pricing__basic .prices .amount--basic-color, .pricing__professional .price-title .amount--basic-color, .pricing__professional .prices .amount--basic-color, .pricing__premium .price-title .amount--basic-color, .pricing__premium .prices .amount--basic-color {
-  color: #EB476E;
+  color: #FB3B64;
 }
 .pricing__basic .price-title .amount--professional-color, .pricing__basic .prices .amount--professional-color, .pricing__professional .price-title .amount--professional-color, .pricing__professional .prices .amount--professional-color, .pricing__premium .price-title .amount--professional-color, .pricing__premium .prices .amount--professional-color {
   color: #07ACE6;
@@ -265,7 +265,7 @@ body {
   padding: 0 0.6em 2em;
 }
 .pricing__basic .btn--basic-format, .pricing__professional .btn--basic-format, .pricing__premium .btn--basic-format {
-  background-color: #EB476E;
+  background-color: #FB3B64;
 }
 .pricing__basic .btn--professional-format, .pricing__professional .btn--professional-format, .pricing__premium .btn--professional-format {
   background-color: #07ACE6;
@@ -273,8 +273,20 @@ body {
 .pricing__basic .btn--premium-format, .pricing__professional .btn--premium-format, .pricing__premium .btn--premium-format {
   background-color: #55DFB4;
 }
+.pricing__basic:hover {
+  width: 100%;
+  box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.4392156863);
+}
+.pricing__professional:hover {
+  width: 100%;
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.4392156863);
+}
+.pricing__premium:hover {
+  width: 100%;
+  box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.5215686275);
+}
 .pricing .basic--border-color {
-  border-color: #EB476E;
+  border-color: #FB3B64;
 }
 .pricing .professional--border-color {
   border-color: #07ACE6;

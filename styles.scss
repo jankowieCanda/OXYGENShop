@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 $oxygenColor: #08A6E4;
-$basicColor: #EB476E;
+$basicColor: #FB3B64;
 $proColor: #07ACE6;
 $premiumColor: #55DFB4;
 $whiteColor: #FFFFFF;
@@ -227,7 +227,7 @@ body {
         clear: both;
     }
     &__basic, &__professional, &__premium {
-        width: 100%;
+        width: 90%;
         margin-bottom: $bottom * 2;
         border: solid 1px;
         border-radius: 18px;
@@ -304,6 +304,18 @@ body {
         .btn--premium-format {
             background-color: $premiumColor;
         }
+    }
+    &__basic:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #FB3B6470;
+    }
+    &__professional:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #07ACE670;
+    }
+    &__premium:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #55DFB485;
     }
     .basic--border-color {
         border-color: $basicColor;
