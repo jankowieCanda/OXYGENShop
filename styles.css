@@ -7,6 +7,7 @@
 
 body {
   min-width: 320px;
+  text-align: center;
 }
 
 .btn {
@@ -58,31 +59,28 @@ body {
   margin: 1.8em 0;
 }
 
-.main {
-  text-align: center;
-}
-.main .opening-section {
+.opening-section {
   width: 80%;
   margin-bottom: 1.25em;
 }
-.main .opening-section__title {
+.opening-section__title {
   margin-bottom: 1.25em;
 }
-.main .opening-section__title h2 {
+.opening-section__title h2 {
   font-family: "raleway";
   font-weight: 400;
   font-size: 2rem;
 }
-.main .opening-section__descrip {
+.opening-section__descrip {
   padding: 0 1.5em;
   margin-bottom: 1.25em;
 }
-.main .opening-section__descrip p {
+.opening-section__descrip p {
   font-family: "open sans";
   font-weight: 400;
   font-size: 1rem;
 }
-.main .opening-section .btn--section-opening {
+.opening-section .btn--section-opening {
   width: 100%;
   height: 67px;
   border-radius: 40px;
@@ -90,214 +88,218 @@ body {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
   font-size: 1rem;
 }
-.main .popular-data {
+
+.popular-data {
   width: 80%;
   margin-bottom: 1.25em;
 }
-.main .popular-data__title {
+.popular-data__title {
   padding: 0 1.5em;
   margin-bottom: 2.5em;
 }
-.main .popular-data__title #data-title {
+.popular-data__title #data-title {
   font-family: "raleway";
   font-weight: 300;
   font-size: 1.9rem;
 }
-.main .popular-data__column1, .main .popular-data__column2, .main .popular-data__column3 {
+.popular-data__column1, .popular-data__column2, .popular-data__column3 {
   width: 100%;
   margin-bottom: 1.25em;
 }
-.main .popular-data__column1 .column1__img, .main .popular-data__column1 .column1__descrip, .main .popular-data__column1 .column2__img, .main .popular-data__column1 .column2__descrip, .main .popular-data__column1 .column3__img, .main .popular-data__column1 .column3__descrip, .main .popular-data__column2 .column1__img, .main .popular-data__column2 .column1__descrip, .main .popular-data__column2 .column2__img, .main .popular-data__column2 .column2__descrip, .main .popular-data__column2 .column3__img, .main .popular-data__column2 .column3__descrip, .main .popular-data__column3 .column1__img, .main .popular-data__column3 .column1__descrip, .main .popular-data__column3 .column2__img, .main .popular-data__column3 .column2__descrip, .main .popular-data__column3 .column3__img, .main .popular-data__column3 .column3__descrip {
+.popular-data__column1 .column1__img, .popular-data__column1 .column1__descrip, .popular-data__column1 .column2__img, .popular-data__column1 .column2__descrip, .popular-data__column1 .column3__img, .popular-data__column1 .column3__descrip, .popular-data__column2 .column1__img, .popular-data__column2 .column1__descrip, .popular-data__column2 .column2__img, .popular-data__column2 .column2__descrip, .popular-data__column2 .column3__img, .popular-data__column2 .column3__descrip, .popular-data__column3 .column1__img, .popular-data__column3 .column1__descrip, .popular-data__column3 .column2__img, .popular-data__column3 .column2__descrip, .popular-data__column3 .column3__img, .popular-data__column3 .column3__descrip {
   width: 60%;
   margin-bottom: 0.625em;
 }
-.main .popular-data__column1 .column1__img .quantity, .main .popular-data__column1 .column1__descrip .quantity, .main .popular-data__column1 .column2__img .quantity, .main .popular-data__column1 .column2__descrip .quantity, .main .popular-data__column1 .column3__img .quantity, .main .popular-data__column1 .column3__descrip .quantity, .main .popular-data__column2 .column1__img .quantity, .main .popular-data__column2 .column1__descrip .quantity, .main .popular-data__column2 .column2__img .quantity, .main .popular-data__column2 .column2__descrip .quantity, .main .popular-data__column2 .column3__img .quantity, .main .popular-data__column2 .column3__descrip .quantity, .main .popular-data__column3 .column1__img .quantity, .main .popular-data__column3 .column1__descrip .quantity, .main .popular-data__column3 .column2__img .quantity, .main .popular-data__column3 .column2__descrip .quantity, .main .popular-data__column3 .column3__img .quantity, .main .popular-data__column3 .column3__descrip .quantity {
+.popular-data__column1 .column1__img .quantity, .popular-data__column1 .column1__descrip .quantity, .popular-data__column1 .column2__img .quantity, .popular-data__column1 .column2__descrip .quantity, .popular-data__column1 .column3__img .quantity, .popular-data__column1 .column3__descrip .quantity, .popular-data__column2 .column1__img .quantity, .popular-data__column2 .column1__descrip .quantity, .popular-data__column2 .column2__img .quantity, .popular-data__column2 .column2__descrip .quantity, .popular-data__column2 .column3__img .quantity, .popular-data__column2 .column3__descrip .quantity, .popular-data__column3 .column1__img .quantity, .popular-data__column3 .column1__descrip .quantity, .popular-data__column3 .column2__img .quantity, .popular-data__column3 .column2__descrip .quantity, .popular-data__column3 .column3__img .quantity, .popular-data__column3 .column3__descrip .quantity {
   font-family: "raleway";
   font-weight: 800;
   font-size: 1.3rem;
   letter-spacing: 0.4rem;
   margin-bottom: 0.625em;
 }
-.main .popular-data__column1 .column1__img .quantity-descrip, .main .popular-data__column1 .column1__descrip .quantity-descrip, .main .popular-data__column1 .column2__img .quantity-descrip, .main .popular-data__column1 .column2__descrip .quantity-descrip, .main .popular-data__column1 .column3__img .quantity-descrip, .main .popular-data__column1 .column3__descrip .quantity-descrip, .main .popular-data__column2 .column1__img .quantity-descrip, .main .popular-data__column2 .column1__descrip .quantity-descrip, .main .popular-data__column2 .column2__img .quantity-descrip, .main .popular-data__column2 .column2__descrip .quantity-descrip, .main .popular-data__column2 .column3__img .quantity-descrip, .main .popular-data__column2 .column3__descrip .quantity-descrip, .main .popular-data__column3 .column1__img .quantity-descrip, .main .popular-data__column3 .column1__descrip .quantity-descrip, .main .popular-data__column3 .column2__img .quantity-descrip, .main .popular-data__column3 .column2__descrip .quantity-descrip, .main .popular-data__column3 .column3__img .quantity-descrip, .main .popular-data__column3 .column3__descrip .quantity-descrip {
+.popular-data__column1 .column1__img .quantity-descrip, .popular-data__column1 .column1__descrip .quantity-descrip, .popular-data__column1 .column2__img .quantity-descrip, .popular-data__column1 .column2__descrip .quantity-descrip, .popular-data__column1 .column3__img .quantity-descrip, .popular-data__column1 .column3__descrip .quantity-descrip, .popular-data__column2 .column1__img .quantity-descrip, .popular-data__column2 .column1__descrip .quantity-descrip, .popular-data__column2 .column2__img .quantity-descrip, .popular-data__column2 .column2__descrip .quantity-descrip, .popular-data__column2 .column3__img .quantity-descrip, .popular-data__column2 .column3__descrip .quantity-descrip, .popular-data__column3 .column1__img .quantity-descrip, .popular-data__column3 .column1__descrip .quantity-descrip, .popular-data__column3 .column2__img .quantity-descrip, .popular-data__column3 .column2__descrip .quantity-descrip, .popular-data__column3 .column3__img .quantity-descrip, .popular-data__column3 .column3__descrip .quantity-descrip {
   font-family: "raleway";
   font-weight: 400;
   font-size: 1.05rem;
   color: #A5A5A5;
 }
-.main .popular-data__column1 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse3-position {
+.popular-data__column1 .column1__img .ellipse_img--ellipse1-position, .popular-data__column1 .column1__img .ellipse_img--ellipse3-position, .popular-data__column1 .column1__descrip .ellipse_img--ellipse1-position, .popular-data__column1 .column1__descrip .ellipse_img--ellipse3-position, .popular-data__column1 .column2__img .ellipse_img--ellipse1-position, .popular-data__column1 .column2__img .ellipse_img--ellipse3-position, .popular-data__column1 .column2__descrip .ellipse_img--ellipse1-position, .popular-data__column1 .column2__descrip .ellipse_img--ellipse3-position, .popular-data__column1 .column3__img .ellipse_img--ellipse1-position, .popular-data__column1 .column3__img .ellipse_img--ellipse3-position, .popular-data__column1 .column3__descrip .ellipse_img--ellipse1-position, .popular-data__column1 .column3__descrip .ellipse_img--ellipse3-position, .popular-data__column2 .column1__img .ellipse_img--ellipse1-position, .popular-data__column2 .column1__img .ellipse_img--ellipse3-position, .popular-data__column2 .column1__descrip .ellipse_img--ellipse1-position, .popular-data__column2 .column1__descrip .ellipse_img--ellipse3-position, .popular-data__column2 .column2__img .ellipse_img--ellipse1-position, .popular-data__column2 .column2__img .ellipse_img--ellipse3-position, .popular-data__column2 .column2__descrip .ellipse_img--ellipse1-position, .popular-data__column2 .column2__descrip .ellipse_img--ellipse3-position, .popular-data__column2 .column3__img .ellipse_img--ellipse1-position, .popular-data__column2 .column3__img .ellipse_img--ellipse3-position, .popular-data__column2 .column3__descrip .ellipse_img--ellipse1-position, .popular-data__column2 .column3__descrip .ellipse_img--ellipse3-position, .popular-data__column3 .column1__img .ellipse_img--ellipse1-position, .popular-data__column3 .column1__img .ellipse_img--ellipse3-position, .popular-data__column3 .column1__descrip .ellipse_img--ellipse1-position, .popular-data__column3 .column1__descrip .ellipse_img--ellipse3-position, .popular-data__column3 .column2__img .ellipse_img--ellipse1-position, .popular-data__column3 .column2__img .ellipse_img--ellipse3-position, .popular-data__column3 .column2__descrip .ellipse_img--ellipse1-position, .popular-data__column3 .column2__descrip .ellipse_img--ellipse3-position, .popular-data__column3 .column3__img .ellipse_img--ellipse1-position, .popular-data__column3 .column3__img .ellipse_img--ellipse3-position, .popular-data__column3 .column3__descrip .ellipse_img--ellipse1-position, .popular-data__column3 .column3__descrip .ellipse_img--ellipse3-position {
   margin-left: -1em;
 }
-.main .popular-data__column1 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse2-position {
+.popular-data__column1 .column1__img .ellipse_img--ellipse2-position, .popular-data__column1 .column1__descrip .ellipse_img--ellipse2-position, .popular-data__column1 .column2__img .ellipse_img--ellipse2-position, .popular-data__column1 .column2__descrip .ellipse_img--ellipse2-position, .popular-data__column1 .column3__img .ellipse_img--ellipse2-position, .popular-data__column1 .column3__descrip .ellipse_img--ellipse2-position, .popular-data__column2 .column1__img .ellipse_img--ellipse2-position, .popular-data__column2 .column1__descrip .ellipse_img--ellipse2-position, .popular-data__column2 .column2__img .ellipse_img--ellipse2-position, .popular-data__column2 .column2__descrip .ellipse_img--ellipse2-position, .popular-data__column2 .column3__img .ellipse_img--ellipse2-position, .popular-data__column2 .column3__descrip .ellipse_img--ellipse2-position, .popular-data__column3 .column1__img .ellipse_img--ellipse2-position, .popular-data__column3 .column1__descrip .ellipse_img--ellipse2-position, .popular-data__column3 .column2__img .ellipse_img--ellipse2-position, .popular-data__column3 .column2__descrip .ellipse_img--ellipse2-position, .popular-data__column3 .column3__img .ellipse_img--ellipse2-position, .popular-data__column3 .column3__descrip .ellipse_img--ellipse2-position {
   margin-left: -0.9em;
 }
-.main .popular-data__column1 .column1__img .person-img, .main .popular-data__column1 .column1__descrip .person-img, .main .popular-data__column1 .column2__img .person-img, .main .popular-data__column1 .column2__descrip .person-img, .main .popular-data__column1 .column3__img .person-img, .main .popular-data__column1 .column3__descrip .person-img, .main .popular-data__column2 .column1__img .person-img, .main .popular-data__column2 .column1__descrip .person-img, .main .popular-data__column2 .column2__img .person-img, .main .popular-data__column2 .column2__descrip .person-img, .main .popular-data__column2 .column3__img .person-img, .main .popular-data__column2 .column3__descrip .person-img, .main .popular-data__column3 .column1__img .person-img, .main .popular-data__column3 .column1__descrip .person-img, .main .popular-data__column3 .column2__img .person-img, .main .popular-data__column3 .column2__descrip .person-img, .main .popular-data__column3 .column3__img .person-img, .main .popular-data__column3 .column3__descrip .person-img {
+.popular-data__column1 .column1__img .person-img, .popular-data__column1 .column1__descrip .person-img, .popular-data__column1 .column2__img .person-img, .popular-data__column1 .column2__descrip .person-img, .popular-data__column1 .column3__img .person-img, .popular-data__column1 .column3__descrip .person-img, .popular-data__column2 .column1__img .person-img, .popular-data__column2 .column1__descrip .person-img, .popular-data__column2 .column2__img .person-img, .popular-data__column2 .column2__descrip .person-img, .popular-data__column2 .column3__img .person-img, .popular-data__column2 .column3__descrip .person-img, .popular-data__column3 .column1__img .person-img, .popular-data__column3 .column1__descrip .person-img, .popular-data__column3 .column2__img .person-img, .popular-data__column3 .column2__descrip .person-img, .popular-data__column3 .column3__img .person-img, .popular-data__column3 .column3__descrip .person-img {
   position: absolute;
   margin-left: -2em;
   margin-top: 0.2em;
 }
-.main .popular-data__column1 .column1__img .eye-img, .main .popular-data__column1 .column1__descrip .eye-img, .main .popular-data__column1 .column2__img .eye-img, .main .popular-data__column1 .column2__descrip .eye-img, .main .popular-data__column1 .column3__img .eye-img, .main .popular-data__column1 .column3__descrip .eye-img, .main .popular-data__column2 .column1__img .eye-img, .main .popular-data__column2 .column1__descrip .eye-img, .main .popular-data__column2 .column2__img .eye-img, .main .popular-data__column2 .column2__descrip .eye-img, .main .popular-data__column2 .column3__img .eye-img, .main .popular-data__column2 .column3__descrip .eye-img, .main .popular-data__column3 .column1__img .eye-img, .main .popular-data__column3 .column1__descrip .eye-img, .main .popular-data__column3 .column2__img .eye-img, .main .popular-data__column3 .column2__descrip .eye-img, .main .popular-data__column3 .column3__img .eye-img, .main .popular-data__column3 .column3__descrip .eye-img {
+.popular-data__column1 .column1__img .eye-img, .popular-data__column1 .column1__descrip .eye-img, .popular-data__column1 .column2__img .eye-img, .popular-data__column1 .column2__descrip .eye-img, .popular-data__column1 .column3__img .eye-img, .popular-data__column1 .column3__descrip .eye-img, .popular-data__column2 .column1__img .eye-img, .popular-data__column2 .column1__descrip .eye-img, .popular-data__column2 .column2__img .eye-img, .popular-data__column2 .column2__descrip .eye-img, .popular-data__column2 .column3__img .eye-img, .popular-data__column2 .column3__descrip .eye-img, .popular-data__column3 .column1__img .eye-img, .popular-data__column3 .column1__descrip .eye-img, .popular-data__column3 .column2__img .eye-img, .popular-data__column3 .column2__descrip .eye-img, .popular-data__column3 .column3__img .eye-img, .popular-data__column3 .column3__descrip .eye-img {
   position: absolute;
   margin-left: -2.5em;
   margin-top: 0.8em;
 }
-.main .popular-data__column1 .column1__img .catalog-img, .main .popular-data__column1 .column1__descrip .catalog-img, .main .popular-data__column1 .column2__img .catalog-img, .main .popular-data__column1 .column2__descrip .catalog-img, .main .popular-data__column1 .column3__img .catalog-img, .main .popular-data__column1 .column3__descrip .catalog-img, .main .popular-data__column2 .column1__img .catalog-img, .main .popular-data__column2 .column1__descrip .catalog-img, .main .popular-data__column2 .column2__img .catalog-img, .main .popular-data__column2 .column2__descrip .catalog-img, .main .popular-data__column2 .column3__img .catalog-img, .main .popular-data__column2 .column3__descrip .catalog-img, .main .popular-data__column3 .column1__img .catalog-img, .main .popular-data__column3 .column1__descrip .catalog-img, .main .popular-data__column3 .column2__img .catalog-img, .main .popular-data__column3 .column2__descrip .catalog-img, .main .popular-data__column3 .column3__img .catalog-img, .main .popular-data__column3 .column3__descrip .catalog-img {
+.popular-data__column1 .column1__img .catalog-img, .popular-data__column1 .column1__descrip .catalog-img, .popular-data__column1 .column2__img .catalog-img, .popular-data__column1 .column2__descrip .catalog-img, .popular-data__column1 .column3__img .catalog-img, .popular-data__column1 .column3__descrip .catalog-img, .popular-data__column2 .column1__img .catalog-img, .popular-data__column2 .column1__descrip .catalog-img, .popular-data__column2 .column2__img .catalog-img, .popular-data__column2 .column2__descrip .catalog-img, .popular-data__column2 .column3__img .catalog-img, .popular-data__column2 .column3__descrip .catalog-img, .popular-data__column3 .column1__img .catalog-img, .popular-data__column3 .column1__descrip .catalog-img, .popular-data__column3 .column2__img .catalog-img, .popular-data__column3 .column2__descrip .catalog-img, .popular-data__column3 .column3__img .catalog-img, .popular-data__column3 .column3__descrip .catalog-img {
   position: absolute;
   margin-left: -1.9em;
   margin-top: 0.4em;
 }
-.main .groups {
+
+.groups {
   width: 80%;
   margin-bottom: 1.25em;
 }
-.main .groups .group1, .main .groups .group2, .main .groups .group3 {
+.groups .group1, .groups .group2, .groups .group3 {
   text-align: left;
   margin-bottom: 1.25em;
   padding: 0.9em;
 }
-.main .groups .group1__img, .main .groups .group1__title, .main .groups .group1__descrip, .main .groups .group2__img, .main .groups .group2__title, .main .groups .group2__descrip, .main .groups .group3__img, .main .groups .group3__title, .main .groups .group3__descrip {
+.groups .group1__img, .groups .group1__title, .groups .group1__descrip, .groups .group2__img, .groups .group2__title, .groups .group2__descrip, .groups .group3__img, .groups .group3__title, .groups .group3__descrip {
   margin-bottom: 1.25em;
 }
-.main .groups .group1__img .group-title, .main .groups .group1__title .group-title, .main .groups .group1__descrip .group-title, .main .groups .group2__img .group-title, .main .groups .group2__title .group-title, .main .groups .group2__descrip .group-title, .main .groups .group3__img .group-title, .main .groups .group3__title .group-title, .main .groups .group3__descrip .group-title {
+.groups .group1__img .group-title, .groups .group1__title .group-title, .groups .group1__descrip .group-title, .groups .group2__img .group-title, .groups .group2__title .group-title, .groups .group2__descrip .group-title, .groups .group3__img .group-title, .groups .group3__title .group-title, .groups .group3__descrip .group-title {
   font-family: "raleway";
   font-weight: 400;
   font-size: 1.9rem;
 }
-.main .groups .group1__img .group__descrip-txt, .main .groups .group1__title .group__descrip-txt, .main .groups .group1__descrip .group__descrip-txt, .main .groups .group2__img .group__descrip-txt, .main .groups .group2__title .group__descrip-txt, .main .groups .group2__descrip .group__descrip-txt, .main .groups .group3__img .group__descrip-txt, .main .groups .group3__title .group__descrip-txt, .main .groups .group3__descrip .group__descrip-txt {
+.groups .group1__img .group__descrip-txt, .groups .group1__title .group__descrip-txt, .groups .group1__descrip .group__descrip-txt, .groups .group2__img .group__descrip-txt, .groups .group2__title .group__descrip-txt, .groups .group2__descrip .group__descrip-txt, .groups .group3__img .group__descrip-txt, .groups .group3__title .group__descrip-txt, .groups .group3__descrip .group__descrip-txt {
   font-family: "open sans";
   font-weight: 400;
   font-size: 0.9rem;
 }
-.main .groups .group1__img #macbook, .main .groups .group1__title #macbook, .main .groups .group1__descrip #macbook, .main .groups .group2__img #macbook, .main .groups .group2__title #macbook, .main .groups .group2__descrip #macbook, .main .groups .group3__img #macbook, .main .groups .group3__title #macbook, .main .groups .group3__descrip #macbook {
+.groups .group1__img #macbook, .groups .group1__title #macbook, .groups .group1__descrip #macbook, .groups .group2__img #macbook, .groups .group2__title #macbook, .groups .group2__descrip #macbook, .groups .group3__img #macbook, .groups .group3__title #macbook, .groups .group3__descrip #macbook {
   position: absolute;
   margin-top: 4em;
   left: 5.8em;
 }
-.main .groups .group1__img #frame, .main .groups .group1__title #frame, .main .groups .group1__descrip #frame, .main .groups .group2__img #frame, .main .groups .group2__title #frame, .main .groups .group2__descrip #frame, .main .groups .group3__img #frame, .main .groups .group3__title #frame, .main .groups .group3__descrip #frame {
+.groups .group1__img #frame, .groups .group1__title #frame, .groups .group1__descrip #frame, .groups .group2__img #frame, .groups .group2__title #frame, .groups .group2__descrip #frame, .groups .group3__img #frame, .groups .group3__title #frame, .groups .group3__descrip #frame {
   margin: 1.6em 0 1.6em 8.2em;
 }
-.main .groups .group1__img #iphone, .main .groups .group1__title #iphone, .main .groups .group1__descrip #iphone, .main .groups .group2__img #iphone, .main .groups .group2__title #iphone, .main .groups .group2__descrip #iphone, .main .groups .group3__img #iphone, .main .groups .group3__title #iphone, .main .groups .group3__descrip #iphone {
+.groups .group1__img #iphone, .groups .group1__title #iphone, .groups .group1__descrip #iphone, .groups .group2__img #iphone, .groups .group2__title #iphone, .groups .group2__descrip #iphone, .groups .group3__img #iphone, .groups .group3__title #iphone, .groups .group3__descrip #iphone {
   position: absolute;
   margin: 0.5em 0 0 -8.2em;
 }
-.main .groups .group1__img #ellipse, .main .groups .group1__title #ellipse, .main .groups .group1__descrip #ellipse, .main .groups .group2__img #ellipse, .main .groups .group2__title #ellipse, .main .groups .group2__descrip #ellipse, .main .groups .group3__img #ellipse, .main .groups .group3__title #ellipse, .main .groups .group3__descrip #ellipse {
+.groups .group1__img #ellipse, .groups .group1__title #ellipse, .groups .group1__descrip #ellipse, .groups .group2__img #ellipse, .groups .group2__title #ellipse, .groups .group2__descrip #ellipse, .groups .group3__img #ellipse, .groups .group3__title #ellipse, .groups .group3__descrip #ellipse {
   margin-left: 3em;
 }
-.main .groups .group1__img #trumpet, .main .groups .group1__title #trumpet, .main .groups .group1__descrip #trumpet, .main .groups .group2__img #trumpet, .main .groups .group2__title #trumpet, .main .groups .group2__descrip #trumpet, .main .groups .group3__img #trumpet, .main .groups .group3__title #trumpet, .main .groups .group3__descrip #trumpet {
+.groups .group1__img #trumpet, .groups .group1__title #trumpet, .groups .group1__descrip #trumpet, .groups .group2__img #trumpet, .groups .group2__title #trumpet, .groups .group2__descrip #trumpet, .groups .group3__img #trumpet, .groups .group3__title #trumpet, .groups .group3__descrip #trumpet {
   position: absolute;
   margin: 1.6em 0 0 -2.5em;
 }
-.main .groups .group1__img #rectangle, .main .groups .group1__title #rectangle, .main .groups .group1__descrip #rectangle, .main .groups .group2__img #rectangle, .main .groups .group2__title #rectangle, .main .groups .group2__descrip #rectangle, .main .groups .group3__img #rectangle, .main .groups .group3__title #rectangle, .main .groups .group3__descrip #rectangle {
+.groups .group1__img #rectangle, .groups .group1__title #rectangle, .groups .group1__descrip #rectangle, .groups .group2__img #rectangle, .groups .group2__title #rectangle, .groups .group2__descrip #rectangle, .groups .group3__img #rectangle, .groups .group3__title #rectangle, .groups .group3__descrip #rectangle {
   margin-left: -1.3em;
 }
-.main .pricing {
+
+.pricing {
   width: 80%;
   margin-bottom: 1.25em;
 }
-.main .pricing__title {
+.pricing__title {
   margin-bottom: 1.25em;
 }
-.main .pricing__title .title--pricing-title {
+.pricing__title .title--pricing-title {
   font-family: "raleway";
   font-weight: 400;
   font-size: 2rem;
 }
-.main .pricing__btn {
+.pricing__btn {
   width: 100%;
   clear: both;
 }
-.main .pricing__basic, .main .pricing__professional, .main .pricing__premium {
+.pricing__basic, .pricing__professional, .pricing__premium {
   width: 100%;
   margin-bottom: 2.5em;
   border: solid 1px;
   border-radius: 18px;
   height: 251px;
 }
-.main .pricing__basic .features, .main .pricing__professional .features, .main .pricing__premium .features {
+.pricing__basic .features, .pricing__professional .features, .pricing__premium .features {
   width: 50%;
   height: 80%;
   margin-bottom: 1.25em;
   float: right;
   text-align: left;
 }
-.main .pricing__basic .features__list, .main .pricing__professional .features__list, .main .pricing__premium .features__list {
+.pricing__basic .features__list, .pricing__professional .features__list, .pricing__premium .features__list {
   list-style: none;
   padding-top: 1em;
 }
-.main .pricing__basic .features__list .list-item__capacity, .main .pricing__basic .features__list .list-item__subDom, .main .pricing__basic .features__list .list-item__mail, .main .pricing__basic .features__list .list-item__licence, .main .pricing__basic .features__list .list-item__support, .main .pricing__professional .features__list .list-item__capacity, .main .pricing__professional .features__list .list-item__subDom, .main .pricing__professional .features__list .list-item__mail, .main .pricing__professional .features__list .list-item__licence, .main .pricing__professional .features__list .list-item__support, .main .pricing__premium .features__list .list-item__capacity, .main .pricing__premium .features__list .list-item__subDom, .main .pricing__premium .features__list .list-item__mail, .main .pricing__premium .features__list .list-item__licence, .main .pricing__premium .features__list .list-item__support {
+.pricing__basic .features__list .list-item__capacity, .pricing__basic .features__list .list-item__subDom, .pricing__basic .features__list .list-item__mail, .pricing__basic .features__list .list-item__licence, .pricing__basic .features__list .list-item__support, .pricing__professional .features__list .list-item__capacity, .pricing__professional .features__list .list-item__subDom, .pricing__professional .features__list .list-item__mail, .pricing__professional .features__list .list-item__licence, .pricing__professional .features__list .list-item__support, .pricing__premium .features__list .list-item__capacity, .pricing__premium .features__list .list-item__subDom, .pricing__premium .features__list .list-item__mail, .pricing__premium .features__list .list-item__licence, .pricing__premium .features__list .list-item__support {
   line-height: 30px;
   margin-bottom: 0.625em;
 }
-.main .pricing__basic .features__list .list-item__capacity .feat__item, .main .pricing__basic .features__list .list-item__subDom .feat__item, .main .pricing__basic .features__list .list-item__mail .feat__item, .main .pricing__basic .features__list .list-item__licence .feat__item, .main .pricing__basic .features__list .list-item__support .feat__item, .main .pricing__professional .features__list .list-item__capacity .feat__item, .main .pricing__professional .features__list .list-item__subDom .feat__item, .main .pricing__professional .features__list .list-item__mail .feat__item, .main .pricing__professional .features__list .list-item__licence .feat__item, .main .pricing__professional .features__list .list-item__support .feat__item, .main .pricing__premium .features__list .list-item__capacity .feat__item, .main .pricing__premium .features__list .list-item__subDom .feat__item, .main .pricing__premium .features__list .list-item__mail .feat__item, .main .pricing__premium .features__list .list-item__licence .feat__item, .main .pricing__premium .features__list .list-item__support .feat__item {
+.pricing__basic .features__list .list-item__capacity .feat__item, .pricing__basic .features__list .list-item__subDom .feat__item, .pricing__basic .features__list .list-item__mail .feat__item, .pricing__basic .features__list .list-item__licence .feat__item, .pricing__basic .features__list .list-item__support .feat__item, .pricing__professional .features__list .list-item__capacity .feat__item, .pricing__professional .features__list .list-item__subDom .feat__item, .pricing__professional .features__list .list-item__mail .feat__item, .pricing__professional .features__list .list-item__licence .feat__item, .pricing__professional .features__list .list-item__support .feat__item, .pricing__premium .features__list .list-item__capacity .feat__item, .pricing__premium .features__list .list-item__subDom .feat__item, .pricing__premium .features__list .list-item__mail .feat__item, .pricing__premium .features__list .list-item__licence .feat__item, .pricing__premium .features__list .list-item__support .feat__item {
   display: inline;
   font-family: "open sans";
   font-weight: 400;
   font-size: 0.9rem;
   margin-left: 0.3em;
 }
-.main .pricing__basic .price-title, .main .pricing__basic .prices, .main .pricing__professional .price-title, .main .pricing__professional .prices, .main .pricing__premium .price-title, .main .pricing__premium .prices {
+.pricing__basic .price-title, .pricing__basic .prices, .pricing__professional .price-title, .pricing__professional .prices, .pricing__premium .price-title, .pricing__premium .prices {
   width: 45%;
   float: left;
 }
-.main .pricing__basic .price-title .title--price-title, .main .pricing__basic .prices .title--price-title, .main .pricing__professional .price-title .title--price-title, .main .pricing__professional .prices .title--price-title, .main .pricing__premium .price-title .title--price-title, .main .pricing__premium .prices .title--price-title {
+.pricing__basic .price-title .title--price-title, .pricing__basic .prices .title--price-title, .pricing__professional .price-title .title--price-title, .pricing__professional .prices .title--price-title, .pricing__premium .price-title .title--price-title, .pricing__premium .prices .title--price-title {
   font-family: "raleway";
   font-weight: 700;
   font-size: 1.3rem;
   color: #13253B;
 }
-.main .pricing__basic .price-title .amount--basic-color, .main .pricing__basic .prices .amount--basic-color, .main .pricing__professional .price-title .amount--basic-color, .main .pricing__professional .prices .amount--basic-color, .main .pricing__premium .price-title .amount--basic-color, .main .pricing__premium .prices .amount--basic-color {
+.pricing__basic .price-title .amount--basic-color, .pricing__basic .prices .amount--basic-color, .pricing__professional .price-title .amount--basic-color, .pricing__professional .prices .amount--basic-color, .pricing__premium .price-title .amount--basic-color, .pricing__premium .prices .amount--basic-color {
   color: #EB476E;
 }
-.main .pricing__basic .price-title .amount--professional-color, .main .pricing__basic .prices .amount--professional-color, .main .pricing__professional .price-title .amount--professional-color, .main .pricing__professional .prices .amount--professional-color, .main .pricing__premium .price-title .amount--professional-color, .main .pricing__premium .prices .amount--professional-color {
+.pricing__basic .price-title .amount--professional-color, .pricing__basic .prices .amount--professional-color, .pricing__professional .price-title .amount--professional-color, .pricing__professional .prices .amount--professional-color, .pricing__premium .price-title .amount--professional-color, .pricing__premium .prices .amount--professional-color {
   color: #07ACE6;
 }
-.main .pricing__basic .price-title .amount--premium-color, .main .pricing__basic .prices .amount--premium-color, .main .pricing__professional .price-title .amount--premium-color, .main .pricing__professional .prices .amount--premium-color, .main .pricing__premium .price-title .amount--premium-color, .main .pricing__premium .prices .amount--premium-color {
+.pricing__basic .price-title .amount--premium-color, .pricing__basic .prices .amount--premium-color, .pricing__professional .price-title .amount--premium-color, .pricing__professional .prices .amount--premium-color, .pricing__premium .price-title .amount--premium-color, .pricing__premium .prices .amount--premium-color {
   color: #55DFB4;
 }
-.main .pricing__basic .price-title .limitedOffer, .main .pricing__basic .prices .limitedOffer, .main .pricing__professional .price-title .limitedOffer, .main .pricing__professional .prices .limitedOffer, .main .pricing__premium .price-title .limitedOffer, .main .pricing__premium .prices .limitedOffer {
+.pricing__basic .price-title .limitedOffer, .pricing__basic .prices .limitedOffer, .pricing__professional .price-title .limitedOffer, .pricing__professional .prices .limitedOffer, .pricing__premium .price-title .limitedOffer, .pricing__premium .prices .limitedOffer {
   font-family: "raleway";
   font-weight: 700;
   font-size: 0.8rem;
 }
-.main .pricing__basic .price-title, .main .pricing__professional .price-title, .main .pricing__premium .price-title {
+.pricing__basic .price-title, .pricing__professional .price-title, .pricing__premium .price-title {
   padding: 3.5em 0.6em 0;
   margin-top: 0.6em;
 }
-.main .pricing__basic .prices, .main .pricing__professional .prices, .main .pricing__premium .prices {
+.pricing__basic .prices, .pricing__professional .prices, .pricing__premium .prices {
   padding: 0 0.6em 2em;
 }
-.main .pricing__basic .btn--basic-format, .main .pricing__professional .btn--basic-format, .main .pricing__premium .btn--basic-format {
+.pricing__basic .btn--basic-format, .pricing__professional .btn--basic-format, .pricing__premium .btn--basic-format {
   background-color: #EB476E;
 }
-.main .pricing__basic .btn--professional-format, .main .pricing__professional .btn--professional-format, .main .pricing__premium .btn--professional-format {
+.pricing__basic .btn--professional-format, .pricing__professional .btn--professional-format, .pricing__premium .btn--professional-format {
   background-color: #07ACE6;
 }
-.main .pricing__basic .btn--premium-format, .main .pricing__professional .btn--premium-format, .main .pricing__premium .btn--premium-format {
+.pricing__basic .btn--premium-format, .pricing__professional .btn--premium-format, .pricing__premium .btn--premium-format {
   background-color: #55DFB4;
 }
-.main .pricing .basic--border-color {
+.pricing .basic--border-color {
   border-color: #EB476E;
 }
-.main .pricing .professional--border-color {
+.pricing .professional--border-color {
   border-color: #07ACE6;
 }
-.main .pricing .premium--border-color {
+.pricing .premium--border-color {
   border-color: #55DFB4;
 }
-.main .contact {
+
+.contact {
   width: 90%;
   min-height: 620px;
   margin-bottom: 1.25em;
   text-align: left;
 }
-.main .contact__title, .main .contact__data, .main .contact__form {
+.contact__title, .contact__data, .contact__form {
   margin-bottom: 1.25em;
 }
-.main .contact__title #anyQuestion, .main .contact__data #anyQuestion, .main .contact__form #anyQuestion {
+.contact__title #anyQuestion, .contact__data #anyQuestion, .contact__form #anyQuestion {
   font-family: "raleway";
   font-weight: 400;
   font-size: 3rem;
 }
-.main .contact__title p, .main .contact__data p, .main .contact__form p {
+.contact__title p, .contact__data p, .contact__form p {
   display: inline;
   line-height: 27px;
   font-family: "open sans";
@@ -305,65 +307,65 @@ body {
   font-size: 1rem;
   color: #A5A5A5;
 }
-.main .contact__title img, .main .contact__data img, .main .contact__form img {
+.contact__title img, .contact__data img, .contact__form img {
   width: 27px;
   height: 27px;
   vertical-align: bottom;
 }
-.main .contact__title #leaveMail, .main .contact__data #leaveMail, .main .contact__form #leaveMail {
+.contact__title #leaveMail, .contact__data #leaveMail, .contact__form #leaveMail {
   font-family: "open sans";
   font-weight: 400;
   font-size: 1rem;
   color: #000000;
 }
-.main .contact__data-mail, .main .contact__data-phone {
+.contact__data-mail, .contact__data-phone {
   padding: 0.3em 0;
 }
-.main .contact__form {
+.contact__form {
   width: 100%;
 }
-.main .contact__form .nameInput, .main .contact__form .emailInput, .main .contact__form .consentCheck {
+.contact__form .nameInput, .contact__form .emailInput, .contact__form .consentCheck {
   margin-bottom: 1.25em;
 }
-.main .contact__form .nameInput #nameLabel, .main .contact__form .nameInput #emailLabel, .main .contact__form .nameInput input[type=text], .main .contact__form .nameInput input[type=email], .main .contact__form .emailInput #nameLabel, .main .contact__form .emailInput #emailLabel, .main .contact__form .emailInput input[type=text], .main .contact__form .emailInput input[type=email], .main .contact__form .consentCheck #nameLabel, .main .contact__form .consentCheck #emailLabel, .main .contact__form .consentCheck input[type=text], .main .contact__form .consentCheck input[type=email] {
+.contact__form .nameInput #nameLabel, .contact__form .nameInput #emailLabel, .contact__form .nameInput input[type=text], .contact__form .nameInput input[type=email], .contact__form .emailInput #nameLabel, .contact__form .emailInput #emailLabel, .contact__form .emailInput input[type=text], .contact__form .emailInput input[type=email], .contact__form .consentCheck #nameLabel, .contact__form .consentCheck #emailLabel, .contact__form .consentCheck input[type=text], .contact__form .consentCheck input[type=email] {
   display: block;
   width: 100%;
   margin-bottom: 1.25em;
 }
-.main .contact__form .nameInput #nameLabel, .main .contact__form .nameInput #emailLabel, .main .contact__form .emailInput #nameLabel, .main .contact__form .emailInput #emailLabel, .main .contact__form .consentCheck #nameLabel, .main .contact__form .consentCheck #emailLabel {
+.contact__form .nameInput #nameLabel, .contact__form .nameInput #emailLabel, .contact__form .emailInput #nameLabel, .contact__form .emailInput #emailLabel, .contact__form .consentCheck #nameLabel, .contact__form .consentCheck #emailLabel {
   font-size: 0.7rem;
   font-weight: 600;
   font-family: "open sans";
   color: #08A6E4;
   letter-spacing: 0.2rem;
 }
-.main .contact__form .nameInput #name, .main .contact__form .nameInput #email, .main .contact__form .emailInput #name, .main .contact__form .emailInput #email, .main .contact__form .consentCheck #name, .main .contact__form .consentCheck #email {
+.contact__form .nameInput #name, .contact__form .nameInput #email, .contact__form .emailInput #name, .contact__form .emailInput #email, .contact__form .consentCheck #name, .contact__form .consentCheck #email {
   border: none;
   border-bottom: 1px solid #95989A;
 }
-.main .contact__form .nameInput #inputDiv, .main .contact__form .emailInput #inputDiv, .main .contact__form .consentCheck #inputDiv {
+.contact__form .nameInput #inputDiv, .contact__form .emailInput #inputDiv, .contact__form .consentCheck #inputDiv {
   float: left;
   width: 24px;
   height: 220px;
   margin-right: 0.6em;
 }
-.main .contact__form .nameInput #inputDiv #consent, .main .contact__form .emailInput #inputDiv #consent, .main .contact__form .consentCheck #inputDiv #consent {
+.contact__form .nameInput #inputDiv #consent, .contact__form .emailInput #inputDiv #consent, .contact__form .consentCheck #inputDiv #consent {
   border-color: #95989A;
   border-radius: 4px;
   width: 24px;
   height: 24px;
   margin-top: 0.3em;
 }
-.main .contact__form .nameInput #labelDiv, .main .contact__form .emailInput #labelDiv, .main .contact__form .consentCheck #labelDiv {
+.contact__form .nameInput #labelDiv, .contact__form .emailInput #labelDiv, .contact__form .consentCheck #labelDiv {
   height: 220px;
 }
-.main .contact__form .nameInput #labelDiv #consentLabel, .main .contact__form .emailInput #labelDiv #consentLabel, .main .contact__form .consentCheck #labelDiv #consentLabel {
+.contact__form .nameInput #labelDiv #consentLabel, .contact__form .emailInput #labelDiv #consentLabel, .contact__form .consentCheck #labelDiv #consentLabel {
   font-family: "open sans";
   font-weight: 400;
   color: #707070;
   font-size: 0.8rem;
 }
-.main .contact__form .btn--submit-format {
+.contact__form .btn--submit-format {
   width: 226px;
   height: 57px;
   border-radius: 35px;
