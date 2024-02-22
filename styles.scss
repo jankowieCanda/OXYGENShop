@@ -7,6 +7,7 @@ $proColor: #07ACE6;
 $premiumColor: #55DFB4;
 $whiteColor: #FFFFFF;
 $blackColor: #000000;
+$lightGreyColor: #A5A5A5;
 $priceTitles: #13253B;
 $regPadding: 0 1.5em;
 $bottom: 1.25em;
@@ -47,11 +48,12 @@ body {
     }
     &__title {
         width: 70%;
-        height: 70px;
         float: left;
         
-        #title {
-            height: 37px;
+        #headTitle {
+            font-family: "raleway";
+            font-weight: 300;
+            font-size: 2rem;
             margin: 0.5em 0;
             color: $oxygenColor;
         }
@@ -76,10 +78,22 @@ body {
 
         &__title {
             margin-bottom: $bottom;
+
+            h2{
+                font-family: "raleway";
+                font-weight: 400;
+                font-size: 2rem;
+            }
         }
         &__descrip {
             padding: $regPadding;
             margin-bottom: $bottom;
+
+            p {
+                font-family: "open sans";
+                font-weight: 400;
+                font-size: 1rem;
+            }
         }
         .btn--section-opening {
             width: 100%;
@@ -96,14 +110,59 @@ body {
 
         &__title {
             padding: $regPadding;
-            margin-bottom: $bottom;
+            margin-bottom: $bottom*2;
+
+            #data-title {
+                font-family: "raleway";
+                font-weight: 300;
+                font-size: 1.9rem;
+            }
         }
         &__column1, &__column2, &__column3 {
             width: 100%;
             margin-bottom: $bottom;
 
-            .column1__img, .column2__img, .column3__img {
+            .column1__img, .column1__descrip, .column2__img, .column2__descrip, .column3__img, .column3__descrip {
                 width: 60%;
+                margin-bottom: math.div($bottom, 2);
+
+                .quantity {
+                    font-family: "raleway";
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                    letter-spacing: 0.4rem;
+                    margin-bottom: math.div($bottom, 2);
+                }
+                .quantity-descrip {
+                    font-family: "raleway";
+                    font-weight: 400;
+                    font-size: 1.05rem;
+                    color: $lightGreyColor;
+                }
+                .ellipse_img {
+                    &--ellipse1-position, &--ellipse3-position{
+                        margin-left: -1em;
+                    }
+                    &--ellipse2-position{
+                        margin-left: -0.9em;
+                    }
+                }
+                .person-img {
+                    position: absolute;
+                    margin-left: -2em;
+                    margin-top: 0.2em;
+                }
+                .eye-img {
+                    position: absolute;
+                    margin-left: -2.5em;
+                    margin-top: 0.8em;
+                }
+                .catalog-img {
+                    position: absolute;
+                    margin-left: -1.9em;
+                    margin-top: 0.4em;
+                }
+                
             };
         }
     }
@@ -119,29 +178,37 @@ body {
             &__img, &__title, &__descrip {
                 margin-bottom: $bottom;
 
+                .group-title {
+                    font-family: "raleway";
+                    font-weight: 400;
+                    font-size: 1.9rem;
+                }
+                .group__descrip-txt {
+                    font-family: "open sans";
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                }
                 #macbook {
                     position: absolute;
-                    margin-top: 3em;
-                    left: 5.5em;
+                    margin-top: 4em;
+                    left: 5.8em;
                 }
                 #frame {
-                    margin-left: 8em;
-                    margin-bottom: 1.6em;
+                    margin: 1.6em 0 1.6em 8.2em;
                 }
                 #iphone {
                     position: absolute;
-                    margin: 0.3em 0 0 -8em;
+                    margin: 0.5em 0 0 -8.2em;
                 }
                 #ellipse {
-                    margin-left: 5em;
+                    margin-left: 3em;
                 }
                 #trumpet {
-                    width: 70%;
                     position: absolute;
-                    margin: 1.6em 0 0 -1.3em;
+                    margin: 1.6em 0 0 -2.5em;
                 }
                 #rectangle {
-                    width: 100%;
+                    margin-left: -1.3em;
                 }
             }
         }
@@ -180,16 +247,21 @@ body {
 
                 &__list {
                     list-style: none;
-                    padding-top: 1.3em;
+                    padding-top: 1em;
 
 
                     .list-item {
 
                         &__capacity, &__subDom, &__mail, &__licence, &__support {
                             line-height: 30px;
+                            margin-bottom: math.div($bottom, 2);
 
-                            p {
+                            .feat__item {
                                 display: inline;
+                                font-family: "open sans";
+                                font-weight: 400;
+                                font-size: 0.9rem;
+                                margin-left: 0.3em;
                             }
                         }
                     }
@@ -197,7 +269,6 @@ body {
             }
             .price-title, .prices {
                 width: 45%;
-                height: 40%;
                 float: left;
 
                 .title--price-title {
@@ -222,7 +293,8 @@ body {
                 }
             }
             .price-title{
-                padding: 5em 0.6em 0;
+                padding: 3.5em 0.6em 0;
+                margin-top: 0.6em;
             }
             .prices {
                 padding: 0 0.6em 2em;
@@ -267,7 +339,7 @@ body {
                 font-family: "open sans";
                 font-weight: 600;
                 font-size: 1rem;
-                color:#A5A5A5;
+                color:$lightGreyColor;
             }
             img {
                 width: 27px;
@@ -363,7 +435,7 @@ body {
             line-height: 30px;
         }
         #foot-pageRights {
-            color: #A5A5A5;
+            color: $lightGreyColor;
             font-family: "open sans";
             font-size: 0.7rem;
             font-weight: 400;

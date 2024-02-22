@@ -39,11 +39,12 @@ body {
 }
 .header__title {
   width: 70%;
-  height: 70px;
   float: left;
 }
-.header__title #title {
-  height: 37px;
+.header__title #headTitle {
+  font-family: "raleway";
+  font-weight: 300;
+  font-size: 2rem;
   margin: 0.5em 0;
   color: #08A6E4;
 }
@@ -67,9 +68,19 @@ body {
 .main .opening-section__title {
   margin-bottom: 1.25em;
 }
+.main .opening-section__title h2 {
+  font-family: "raleway";
+  font-weight: 400;
+  font-size: 2rem;
+}
 .main .opening-section__descrip {
   padding: 0 1.5em;
   margin-bottom: 1.25em;
+}
+.main .opening-section__descrip p {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 1rem;
 }
 .main .opening-section .btn--section-opening {
   width: 100%;
@@ -85,14 +96,54 @@ body {
 }
 .main .popular-data__title {
   padding: 0 1.5em;
-  margin-bottom: 1.25em;
+  margin-bottom: 2.5em;
+}
+.main .popular-data__title #data-title {
+  font-family: "raleway";
+  font-weight: 300;
+  font-size: 1.9rem;
 }
 .main .popular-data__column1, .main .popular-data__column2, .main .popular-data__column3 {
   width: 100%;
   margin-bottom: 1.25em;
 }
-.main .popular-data__column1 .column1__img, .main .popular-data__column1 .column2__img, .main .popular-data__column1 .column3__img, .main .popular-data__column2 .column1__img, .main .popular-data__column2 .column2__img, .main .popular-data__column2 .column3__img, .main .popular-data__column3 .column1__img, .main .popular-data__column3 .column2__img, .main .popular-data__column3 .column3__img {
+.main .popular-data__column1 .column1__img, .main .popular-data__column1 .column1__descrip, .main .popular-data__column1 .column2__img, .main .popular-data__column1 .column2__descrip, .main .popular-data__column1 .column3__img, .main .popular-data__column1 .column3__descrip, .main .popular-data__column2 .column1__img, .main .popular-data__column2 .column1__descrip, .main .popular-data__column2 .column2__img, .main .popular-data__column2 .column2__descrip, .main .popular-data__column2 .column3__img, .main .popular-data__column2 .column3__descrip, .main .popular-data__column3 .column1__img, .main .popular-data__column3 .column1__descrip, .main .popular-data__column3 .column2__img, .main .popular-data__column3 .column2__descrip, .main .popular-data__column3 .column3__img, .main .popular-data__column3 .column3__descrip {
   width: 60%;
+  margin-bottom: 0.625em;
+}
+.main .popular-data__column1 .column1__img .quantity, .main .popular-data__column1 .column1__descrip .quantity, .main .popular-data__column1 .column2__img .quantity, .main .popular-data__column1 .column2__descrip .quantity, .main .popular-data__column1 .column3__img .quantity, .main .popular-data__column1 .column3__descrip .quantity, .main .popular-data__column2 .column1__img .quantity, .main .popular-data__column2 .column1__descrip .quantity, .main .popular-data__column2 .column2__img .quantity, .main .popular-data__column2 .column2__descrip .quantity, .main .popular-data__column2 .column3__img .quantity, .main .popular-data__column2 .column3__descrip .quantity, .main .popular-data__column3 .column1__img .quantity, .main .popular-data__column3 .column1__descrip .quantity, .main .popular-data__column3 .column2__img .quantity, .main .popular-data__column3 .column2__descrip .quantity, .main .popular-data__column3 .column3__img .quantity, .main .popular-data__column3 .column3__descrip .quantity {
+  font-family: "raleway";
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 0.625em;
+}
+.main .popular-data__column1 .column1__img .quantity-descrip, .main .popular-data__column1 .column1__descrip .quantity-descrip, .main .popular-data__column1 .column2__img .quantity-descrip, .main .popular-data__column1 .column2__descrip .quantity-descrip, .main .popular-data__column1 .column3__img .quantity-descrip, .main .popular-data__column1 .column3__descrip .quantity-descrip, .main .popular-data__column2 .column1__img .quantity-descrip, .main .popular-data__column2 .column1__descrip .quantity-descrip, .main .popular-data__column2 .column2__img .quantity-descrip, .main .popular-data__column2 .column2__descrip .quantity-descrip, .main .popular-data__column2 .column3__img .quantity-descrip, .main .popular-data__column2 .column3__descrip .quantity-descrip, .main .popular-data__column3 .column1__img .quantity-descrip, .main .popular-data__column3 .column1__descrip .quantity-descrip, .main .popular-data__column3 .column2__img .quantity-descrip, .main .popular-data__column3 .column2__descrip .quantity-descrip, .main .popular-data__column3 .column3__img .quantity-descrip, .main .popular-data__column3 .column3__descrip .quantity-descrip {
+  font-family: "raleway";
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #A5A5A5;
+}
+.main .popular-data__column1 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse3-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse1-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse3-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse1-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse3-position {
+  margin-left: -1em;
+}
+.main .popular-data__column1 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column1 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column1 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column1 .column3__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column2 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column2 .column3__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column1__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column1__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column2__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column2__descrip .ellipse_img--ellipse2-position, .main .popular-data__column3 .column3__img .ellipse_img--ellipse2-position, .main .popular-data__column3 .column3__descrip .ellipse_img--ellipse2-position {
+  margin-left: -0.9em;
+}
+.main .popular-data__column1 .column1__img .person-img, .main .popular-data__column1 .column1__descrip .person-img, .main .popular-data__column1 .column2__img .person-img, .main .popular-data__column1 .column2__descrip .person-img, .main .popular-data__column1 .column3__img .person-img, .main .popular-data__column1 .column3__descrip .person-img, .main .popular-data__column2 .column1__img .person-img, .main .popular-data__column2 .column1__descrip .person-img, .main .popular-data__column2 .column2__img .person-img, .main .popular-data__column2 .column2__descrip .person-img, .main .popular-data__column2 .column3__img .person-img, .main .popular-data__column2 .column3__descrip .person-img, .main .popular-data__column3 .column1__img .person-img, .main .popular-data__column3 .column1__descrip .person-img, .main .popular-data__column3 .column2__img .person-img, .main .popular-data__column3 .column2__descrip .person-img, .main .popular-data__column3 .column3__img .person-img, .main .popular-data__column3 .column3__descrip .person-img {
+  position: absolute;
+  margin-left: -2em;
+  margin-top: 0.2em;
+}
+.main .popular-data__column1 .column1__img .eye-img, .main .popular-data__column1 .column1__descrip .eye-img, .main .popular-data__column1 .column2__img .eye-img, .main .popular-data__column1 .column2__descrip .eye-img, .main .popular-data__column1 .column3__img .eye-img, .main .popular-data__column1 .column3__descrip .eye-img, .main .popular-data__column2 .column1__img .eye-img, .main .popular-data__column2 .column1__descrip .eye-img, .main .popular-data__column2 .column2__img .eye-img, .main .popular-data__column2 .column2__descrip .eye-img, .main .popular-data__column2 .column3__img .eye-img, .main .popular-data__column2 .column3__descrip .eye-img, .main .popular-data__column3 .column1__img .eye-img, .main .popular-data__column3 .column1__descrip .eye-img, .main .popular-data__column3 .column2__img .eye-img, .main .popular-data__column3 .column2__descrip .eye-img, .main .popular-data__column3 .column3__img .eye-img, .main .popular-data__column3 .column3__descrip .eye-img {
+  position: absolute;
+  margin-left: -2.5em;
+  margin-top: 0.8em;
+}
+.main .popular-data__column1 .column1__img .catalog-img, .main .popular-data__column1 .column1__descrip .catalog-img, .main .popular-data__column1 .column2__img .catalog-img, .main .popular-data__column1 .column2__descrip .catalog-img, .main .popular-data__column1 .column3__img .catalog-img, .main .popular-data__column1 .column3__descrip .catalog-img, .main .popular-data__column2 .column1__img .catalog-img, .main .popular-data__column2 .column1__descrip .catalog-img, .main .popular-data__column2 .column2__img .catalog-img, .main .popular-data__column2 .column2__descrip .catalog-img, .main .popular-data__column2 .column3__img .catalog-img, .main .popular-data__column2 .column3__descrip .catalog-img, .main .popular-data__column3 .column1__img .catalog-img, .main .popular-data__column3 .column1__descrip .catalog-img, .main .popular-data__column3 .column2__img .catalog-img, .main .popular-data__column3 .column2__descrip .catalog-img, .main .popular-data__column3 .column3__img .catalog-img, .main .popular-data__column3 .column3__descrip .catalog-img {
+  position: absolute;
+  margin-left: -1.9em;
+  margin-top: 0.4em;
 }
 .main .groups {
   width: 80%;
@@ -106,29 +157,37 @@ body {
 .main .groups .group1__img, .main .groups .group1__title, .main .groups .group1__descrip, .main .groups .group2__img, .main .groups .group2__title, .main .groups .group2__descrip, .main .groups .group3__img, .main .groups .group3__title, .main .groups .group3__descrip {
   margin-bottom: 1.25em;
 }
+.main .groups .group1__img .group-title, .main .groups .group1__title .group-title, .main .groups .group1__descrip .group-title, .main .groups .group2__img .group-title, .main .groups .group2__title .group-title, .main .groups .group2__descrip .group-title, .main .groups .group3__img .group-title, .main .groups .group3__title .group-title, .main .groups .group3__descrip .group-title {
+  font-family: "raleway";
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+.main .groups .group1__img .group__descrip-txt, .main .groups .group1__title .group__descrip-txt, .main .groups .group1__descrip .group__descrip-txt, .main .groups .group2__img .group__descrip-txt, .main .groups .group2__title .group__descrip-txt, .main .groups .group2__descrip .group__descrip-txt, .main .groups .group3__img .group__descrip-txt, .main .groups .group3__title .group__descrip-txt, .main .groups .group3__descrip .group__descrip-txt {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+}
 .main .groups .group1__img #macbook, .main .groups .group1__title #macbook, .main .groups .group1__descrip #macbook, .main .groups .group2__img #macbook, .main .groups .group2__title #macbook, .main .groups .group2__descrip #macbook, .main .groups .group3__img #macbook, .main .groups .group3__title #macbook, .main .groups .group3__descrip #macbook {
   position: absolute;
-  margin-top: 3em;
-  left: 5.5em;
+  margin-top: 4em;
+  left: 5.8em;
 }
 .main .groups .group1__img #frame, .main .groups .group1__title #frame, .main .groups .group1__descrip #frame, .main .groups .group2__img #frame, .main .groups .group2__title #frame, .main .groups .group2__descrip #frame, .main .groups .group3__img #frame, .main .groups .group3__title #frame, .main .groups .group3__descrip #frame {
-  margin-left: 8em;
-  margin-bottom: 1.6em;
+  margin: 1.6em 0 1.6em 8.2em;
 }
 .main .groups .group1__img #iphone, .main .groups .group1__title #iphone, .main .groups .group1__descrip #iphone, .main .groups .group2__img #iphone, .main .groups .group2__title #iphone, .main .groups .group2__descrip #iphone, .main .groups .group3__img #iphone, .main .groups .group3__title #iphone, .main .groups .group3__descrip #iphone {
   position: absolute;
-  margin: 0.3em 0 0 -8em;
+  margin: 0.5em 0 0 -8.2em;
 }
 .main .groups .group1__img #ellipse, .main .groups .group1__title #ellipse, .main .groups .group1__descrip #ellipse, .main .groups .group2__img #ellipse, .main .groups .group2__title #ellipse, .main .groups .group2__descrip #ellipse, .main .groups .group3__img #ellipse, .main .groups .group3__title #ellipse, .main .groups .group3__descrip #ellipse {
-  margin-left: 5em;
+  margin-left: 3em;
 }
 .main .groups .group1__img #trumpet, .main .groups .group1__title #trumpet, .main .groups .group1__descrip #trumpet, .main .groups .group2__img #trumpet, .main .groups .group2__title #trumpet, .main .groups .group2__descrip #trumpet, .main .groups .group3__img #trumpet, .main .groups .group3__title #trumpet, .main .groups .group3__descrip #trumpet {
-  width: 70%;
   position: absolute;
-  margin: 1.6em 0 0 -1.3em;
+  margin: 1.6em 0 0 -2.5em;
 }
 .main .groups .group1__img #rectangle, .main .groups .group1__title #rectangle, .main .groups .group1__descrip #rectangle, .main .groups .group2__img #rectangle, .main .groups .group2__title #rectangle, .main .groups .group2__descrip #rectangle, .main .groups .group3__img #rectangle, .main .groups .group3__title #rectangle, .main .groups .group3__descrip #rectangle {
-  width: 100%;
+  margin-left: -1.3em;
 }
 .main .pricing {
   width: 80%;
@@ -162,17 +221,21 @@ body {
 }
 .main .pricing__basic .features__list, .main .pricing__professional .features__list, .main .pricing__premium .features__list {
   list-style: none;
-  padding-top: 1.3em;
+  padding-top: 1em;
 }
 .main .pricing__basic .features__list .list-item__capacity, .main .pricing__basic .features__list .list-item__subDom, .main .pricing__basic .features__list .list-item__mail, .main .pricing__basic .features__list .list-item__licence, .main .pricing__basic .features__list .list-item__support, .main .pricing__professional .features__list .list-item__capacity, .main .pricing__professional .features__list .list-item__subDom, .main .pricing__professional .features__list .list-item__mail, .main .pricing__professional .features__list .list-item__licence, .main .pricing__professional .features__list .list-item__support, .main .pricing__premium .features__list .list-item__capacity, .main .pricing__premium .features__list .list-item__subDom, .main .pricing__premium .features__list .list-item__mail, .main .pricing__premium .features__list .list-item__licence, .main .pricing__premium .features__list .list-item__support {
   line-height: 30px;
+  margin-bottom: 0.625em;
 }
-.main .pricing__basic .features__list .list-item__capacity p, .main .pricing__basic .features__list .list-item__subDom p, .main .pricing__basic .features__list .list-item__mail p, .main .pricing__basic .features__list .list-item__licence p, .main .pricing__basic .features__list .list-item__support p, .main .pricing__professional .features__list .list-item__capacity p, .main .pricing__professional .features__list .list-item__subDom p, .main .pricing__professional .features__list .list-item__mail p, .main .pricing__professional .features__list .list-item__licence p, .main .pricing__professional .features__list .list-item__support p, .main .pricing__premium .features__list .list-item__capacity p, .main .pricing__premium .features__list .list-item__subDom p, .main .pricing__premium .features__list .list-item__mail p, .main .pricing__premium .features__list .list-item__licence p, .main .pricing__premium .features__list .list-item__support p {
+.main .pricing__basic .features__list .list-item__capacity .feat__item, .main .pricing__basic .features__list .list-item__subDom .feat__item, .main .pricing__basic .features__list .list-item__mail .feat__item, .main .pricing__basic .features__list .list-item__licence .feat__item, .main .pricing__basic .features__list .list-item__support .feat__item, .main .pricing__professional .features__list .list-item__capacity .feat__item, .main .pricing__professional .features__list .list-item__subDom .feat__item, .main .pricing__professional .features__list .list-item__mail .feat__item, .main .pricing__professional .features__list .list-item__licence .feat__item, .main .pricing__professional .features__list .list-item__support .feat__item, .main .pricing__premium .features__list .list-item__capacity .feat__item, .main .pricing__premium .features__list .list-item__subDom .feat__item, .main .pricing__premium .features__list .list-item__mail .feat__item, .main .pricing__premium .features__list .list-item__licence .feat__item, .main .pricing__premium .features__list .list-item__support .feat__item {
   display: inline;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 0.3em;
 }
 .main .pricing__basic .price-title, .main .pricing__basic .prices, .main .pricing__professional .price-title, .main .pricing__professional .prices, .main .pricing__premium .price-title, .main .pricing__premium .prices {
   width: 45%;
-  height: 40%;
   float: left;
 }
 .main .pricing__basic .price-title .title--price-title, .main .pricing__basic .prices .title--price-title, .main .pricing__professional .price-title .title--price-title, .main .pricing__professional .prices .title--price-title, .main .pricing__premium .price-title .title--price-title, .main .pricing__premium .prices .title--price-title {
@@ -196,7 +259,8 @@ body {
   font-size: 0.8rem;
 }
 .main .pricing__basic .price-title, .main .pricing__professional .price-title, .main .pricing__premium .price-title {
-  padding: 5em 0.6em 0;
+  padding: 3.5em 0.6em 0;
+  margin-top: 0.6em;
 }
 .main .pricing__basic .prices, .main .pricing__professional .prices, .main .pricing__premium .prices {
   padding: 0 0.6em 2em;
