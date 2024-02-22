@@ -1,12 +1,15 @@
 @use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 $oxygenColor: #08A6E4;
 $basicColor: #EB476E;
 $proColor: #07ACE6;
 $premiumColor: #55DFB4;
 $whiteColor: #FFFFFF;
-$regPadding: 0 25px;
-$bottom: 20px;
+$blackColor: #000000;
+$priceTitles: #13253B;
+$regPadding: 0 1.5em;
+$bottom: 1.25em;
 
 * {
     box-sizing: border-box;
@@ -23,6 +26,14 @@ body {
     border: none;
     background-color: grey;
     color: $whiteColor;
+    font-family: "open sans";
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.amount {
+    font-family: "open sans";
+    font-weight: 300;
+    font-size: 3rem;
 }
 .header {
     width: 100%;
@@ -33,14 +44,15 @@ body {
     
     &__title, &__menu-logo {
         display: inline;
-        margin-top: 2px;
     }
     &__title {
         width: 70%;
+        height: 70px;
         float: left;
         
         #title {
-            margin: 15px 0;
+            height: 37px;
+            margin: 0.5em 0;
             color: $oxygenColor;
         }
     }
@@ -51,7 +63,7 @@ body {
         #menu {
             width: 20px;
             height: 12px;
-            margin: 25px 0;
+            margin: 1.8em 0;
         }
     }
 }
@@ -75,6 +87,7 @@ body {
             border-radius: 40px;
             background-color: $oxygenColor;
             box-shadow: 5px 10px 14px #07ACE629;
+            font-size: 1rem;
         }
     }
     .popular-data {
@@ -101,31 +114,31 @@ body {
         .group1, .group2, .group3 {
             text-align: left;
             margin-bottom: $bottom;
-            padding: 15px;
+            padding: 0.9em;
 
             &__img, &__title, &__descrip {
                 margin-bottom: $bottom;
 
                 #macbook {
                     position: absolute;
-                    margin-top: 45px;
-                    left: 85px;
+                    margin-top: 3em;
+                    left: 5.5em;
                 }
                 #frame {
-                    margin-left: 135px;
-                    margin-bottom: 25px;
+                    margin-left: 8em;
+                    margin-bottom: 1.6em;
                 }
                 #iphone {
                     position: absolute;
-                    margin: 5px 0 0 -130px;
+                    margin: 0.3em 0 0 -8em;
                 }
                 #ellipse {
-                    margin-left: 70px;
+                    margin-left: 5em;
                 }
                 #trumpet {
                     width: 70%;
                     position: absolute;
-                    margin: 25px 0 0 -20px;
+                    margin: 1.6em 0 0 -1.3em;
                 }
                 #rectangle {
                     width: 100%;
@@ -139,6 +152,12 @@ body {
 
         &__title {
             margin-bottom: $bottom;
+
+            .title--pricing-title {
+                font-family: "raleway";
+                font-weight: 400;
+                font-size: 2rem;
+            }
         }
         &__btn {
             width: 100%;
@@ -146,7 +165,7 @@ body {
         }
         &__basic, &__professional, &__premium {
             width: 100%;
-            margin-bottom: $bottom + 20;
+            margin-bottom: $bottom * 2;
             border: solid 1px;
             border-radius: 18px;
             height: 251px;
@@ -161,7 +180,7 @@ body {
 
                 &__list {
                     list-style: none;
-                    padding-top: 20px;
+                    padding-top: 1.3em;
 
 
                     .list-item {
@@ -180,12 +199,33 @@ body {
                 width: 45%;
                 height: 40%;
                 float: left;
+
+                .title--price-title {
+                    font-family: "raleway";
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    color: $priceTitles;
+                }
+                .amount--basic-color {
+                    color: $basicColor;
+                }
+                .amount--professional-color {
+                    color: $proColor;
+                }
+                .amount--premium-color {
+                    color: $premiumColor;
+                }
+                .limitedOffer {
+                    font-family: "raleway";
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                }
             }
             .price-title{
-                padding: 75px 10px 0;
+                padding: 5em 0.6em 0;
             }
             .prices {
-                padding: 0 10px 35px;
+                padding: 0 0.6em 2em;
             }
             .btn--basic-format{
                 background-color: $basicColor;
@@ -208,25 +248,41 @@ body {
         }
     }
     .contact {
-        width: 80%;
+        width: 90%;
+        min-height: 620px;
         margin-bottom: $bottom;
         text-align: left;
 
         &__title, &__data, &__form {
             margin-bottom: $bottom;
 
+            #anyQuestion {
+                font-family: "raleway";
+                font-weight: 400;
+                font-size: 3rem;
+            }
             p {
                 display: inline;
                 line-height: 27px;
+                font-family: "open sans";
+                font-weight: 600;
+                font-size: 1rem;
+                color:#A5A5A5;
             }
             img {
                 width: 27px;
                 height: 27px;
                 vertical-align: bottom;
             }
+            #leaveMail {
+                font-family: "open sans";
+                font-weight: 400;
+                font-size: 1rem;
+                color: $blackColor;
+            }
         }
         &__data-mail, &__data-phone {
-            padding: 5px 0;
+            padding: 0.3em 0;
         }
         &__form {
             width: 100%;
@@ -239,6 +295,13 @@ body {
                     width: 100%;
                     margin-bottom: $bottom;
                 }
+                #nameLabel, #emailLabel{
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                    font-family: "open sans";
+                    color: $oxygenColor;
+                    letter-spacing: 0.20rem;
+                }
                 #name, #email {
                     border: none;
                     border-bottom: 1px solid #95989A;
@@ -247,18 +310,25 @@ body {
                     float: left;
                     width: 24px;
                     height: 220px;
-                    margin-right: 10px;
+                    margin-right: 0.6em;
 
                     #consent {
                         border-color: #95989A;
                         border-radius: 4px;
                         width: 24px;
                         height: 24px;
-                        margin-top: 5px;
+                        margin-top: 0.3em;
                     }
                 }
                 #labelDiv {
                     height: 220px;
+
+                    #consentLabel {
+                        font-family: "open sans";
+                        font-weight: 400;
+                        color: #707070;
+                        font-size: 0.8rem;
+                    }
                 }
             }
             .btn--submit-format {
@@ -267,12 +337,48 @@ body {
                 border-radius: 35px;
                 background-color: $oxygenColor;
                 float: right;
-                margin-bottom: $bottom * 2;
+                margin-bottom: $bottom;
+                box-shadow: 5px 10px 14px #07ACE629;
             }
         }
     }
 }
 .footer {
-    
+    width: 100%;
+    height: 89px;
+    box-shadow: 0 -5px 40px #0000004A;
+
+    &__logo {
+        width: 60%;
+        height: 100%;
+        float: left;
+        text-align: left;
+        margin: 1.3em 0 0 1.3em;
+
+        #foot-title {
+            color: $oxygenColor;
+            font-family: "Raleway";
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 30px;
+        }
+        #foot-pageRights {
+            color: #A5A5A5;
+            font-family: "open sans";
+            font-size: 0.7rem;
+            font-weight: 400;
+        }
+    }
+    &__socialMedia{
+        width: 30%;
+        height: 100%;
+        float: right;
+        text-align: center;
+        margin-top: 1.8em;
+
+        #twitter, #facebook {
+            margin: 0.3em;
+        }
+    }
 }
 
