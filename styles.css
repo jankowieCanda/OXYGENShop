@@ -488,6 +488,19 @@ body {
   .main__img .image {
     width: 90%;
   }
+  .popular-data {
+    width: 80%;
+    margin-bottom: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .popular-data__title {
+    width: 100%;
+  }
+  .popular-data__column1, .popular-data__column2, .popular-data__column3 {
+    width: 30%;
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

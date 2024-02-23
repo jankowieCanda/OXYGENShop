@@ -541,4 +541,18 @@ body {
             width: 90%;
         }
     }
+    .popular-data {
+        width: 80%;
+        margin-bottom: $bottom;
+        display: flex;
+        flex-wrap: wrap;
+    
+        &__title {
+            width: 100%;
+        }
+        &__column1, &__column2, &__column3 {
+            width: 30%;
+            display: inline;
+        }
+    }
 }
