@@ -19,16 +19,16 @@
                 <nav class="header__menu-nav">
                     <ul class="navList">
                         <li class="navList__item">
-                            <a href="#">WHY US</a>
+                            <a href="#toWhyUs">WHY US</a>
                         </li>
                         <li class="navList__item">
-                            <a href="#">BENEFITS</a>
+                            <a href="#toBenefits">BENEFITS</a>
                         </li>
                         <li class="navList__item">
-                            <a href="#">PRICES</a>
+                            <a href="#toPrices">PRICES</a>
                         </li>
                         <li class="navList__item">
-                            <a href="#">CONTACT</a>
+                            <a href="#toContact">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,9 +49,13 @@
             </div>
         </section>
         <section class="main__img">
-            <img src="./img/Background1.png" alt="image">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="img/Background.png">
+                <img class="image" src="img/Background1.png" alt="image">
+            </picture>
+                
         </section>
-        <section class="popular-data">
+        <section class="popular-data" id="toWhyUs">
             <div class="popular-data__title">
                 <h2 id="data-title">
                     The most popular sales platform in country
@@ -88,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="groups">
+        <section class="groups" id="toBenefits">
             <article class="group1">
                 <div class="group1__img">
                     <img id="macbook" src="img/Macbook2.png" alt="Macbook">
@@ -132,7 +136,7 @@
                 </div>
             </article>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="toPrices">
             <div class="pricing__title">
                 <h2 class="title title--pricing-title">Pricing</h2>
             </div>
@@ -279,7 +283,7 @@
                 <h2 id="anyQuestion">Any questions?</h2>
                 <p id="leaveMail">Leave your email address or call us!</p>
             </div>
-            <div class="contact__data">
+            <div class="contact__data" id="toContact">
                 <div class="contact__data-mail">
                     <img src="img/Mail_Icon.png" alt="email">
                     <p>info@bestshop.xyz</p>

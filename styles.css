@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* MOBILE */
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -445,6 +446,48 @@ body {
 }
 .footer__socialMedia #twitter, .footer__socialMedia #facebook {
   margin: 0.3em;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__title {
+    width: 40%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .header__menu-logo {
+    display: none;
+  }
+  .header__menu {
+    width: 50%;
+    display: inline;
+    margin: 0;
+  }
+  .header__menu-nav {
+    padding: 0;
+    margin: 0;
+  }
+  .header__menu-nav .navList {
+    display: flex;
+  }
+  .header__menu-nav .navList__item {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  .header__menu-nav .navList__item a {
+    padding: 2.7em 0;
+  }
+  .header__menu-nav .navList__item a:hover {
+    border-bottom: solid 4px #08A6E4;
+  }
+  .main__img .image {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

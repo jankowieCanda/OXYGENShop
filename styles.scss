@@ -12,6 +12,8 @@ $priceTitles: #13253B;
 $regPadding: 0 1.5em;
 $bottom: 1.25em;
 
+/* MOBILE */
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -491,3 +493,52 @@ body {
     }
 }
 
+/* DESKTOP */
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            width: 40%;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        &__menu-logo {
+            display: none;
+        }
+        &__menu {
+            width: 50%;
+            display: inline;
+            margin: 0;
+
+            &-nav{
+                padding: 0;
+                margin: 0;
+
+                .navList { 
+                    display: flex;
+
+                    &__item {
+                        display: inline-flex;
+                        margin-bottom: 0;
+
+                        a {
+                            padding: 2.7em 0;
+                        }
+                        a:hover {
+                            border-bottom: solid 4px $oxygenColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main__img {
+        .image {
+            width: 90%;
+        }
+    }
+}
