@@ -552,7 +552,69 @@ body {
         }
         &__column1, &__column2, &__column3 {
             width: 30%;
-            display: inline;
+        }
+    }
+    .groups{
+        width: 100%;
+        
+        .group1 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            width: 90%;
+            
+            &__img{
+                width: 40%;
+                text-align: left;
+
+                #macbook {
+                    margin-left: -2em;
+                }
+                #frame {
+                    margin-left: 9em;
+                    margin-top: -0.5em;
+                }
+            }
+            .group__text {
+                width: 30%;
+                padding-top: 3em;
+
+                .group1__descrip--border-color {
+                    border-bottom: 4px solid $basicColor;
+                }
+            }
+                
+        }
+        .group2, .group3 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 90%;
+
+            &__img {
+                width: 40%;
+                margin: 0;
+
+                #iphone {
+                    margin-left: -20em;
+                    margin-top: 1.5em;
+                }
+                #trumpet {
+                    margin-top: 6em;
+                    margin-left: 4em;
+                }
+            }
+            .group__text {
+                width: 30%;
+                padding-top: 5em;
+
+                .group2__descrip--border-color {
+                    border-bottom: 4px solid $proColor;
+                }
+                .group3__descrip--border-color {
+                    border-bottom: 4px solid $premiumColor;
+                }
+            }
         }
     }
 }

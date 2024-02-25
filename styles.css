@@ -499,7 +499,61 @@ body {
   }
   .popular-data__column1, .popular-data__column2, .popular-data__column3 {
     width: 30%;
-    display: inline;
+  }
+  .groups {
+    width: 100%;
+  }
+  .groups .group1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 90%;
+  }
+  .groups .group1__img {
+    width: 40%;
+    text-align: left;
+  }
+  .groups .group1__img #macbook {
+    margin-left: -2em;
+  }
+  .groups .group1__img #frame {
+    margin-left: 9em;
+    margin-top: -0.5em;
+  }
+  .groups .group1 .group__text {
+    width: 30%;
+    padding-top: 3em;
+  }
+  .groups .group1 .group__text .group1__descrip--border-color {
+    border-bottom: 4px solid #FB3B64;
+  }
+  .groups .group2, .groups .group3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+  }
+  .groups .group2__img, .groups .group3__img {
+    width: 40%;
+    margin: 0;
+  }
+  .groups .group2__img #iphone, .groups .group3__img #iphone {
+    margin-left: -20em;
+    margin-top: 1.5em;
+  }
+  .groups .group2__img #trumpet, .groups .group3__img #trumpet {
+    margin-top: 6em;
+    margin-left: 4em;
+  }
+  .groups .group2 .group__text, .groups .group3 .group__text {
+    width: 30%;
+    padding-top: 5em;
+  }
+  .groups .group2 .group__text .group2__descrip--border-color, .groups .group3 .group__text .group2__descrip--border-color {
+    border-bottom: 4px solid #07ACE6;
+  }
+  .groups .group2 .group__text .group3__descrip--border-color, .groups .group3 .group__text .group3__descrip--border-color {
+    border-bottom: 4px solid #55DFB4;
   }
 }
 
