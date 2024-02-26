@@ -129,6 +129,7 @@ $bottom: 1.25em;
         flex-direction: row;
         flex-wrap: wrap;
         width: 90%;
+        height:90%;
         justify-content: space-evenly;
         align-items: center;
         padding: 5em;
@@ -139,16 +140,19 @@ $bottom: 1.25em;
         &__basic, &__professional, &__premium {
             width: 25%;
             display: flex;
+            justify-content: center;
             flex-direction: column;
-            height: 26.5em;
+            height: 26em;
             padding-top: 1em;
 
             .features {
                 order: 3;
+                width: 80%;
                 text-align: center;
             }
             .price-title {
-                padding: 0 0.6em;
+                width: 100%;
+                padding-top: 0;
             }
         }
         &__basic .prices {

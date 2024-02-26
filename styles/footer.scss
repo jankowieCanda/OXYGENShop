@@ -1,0 +1,57 @@
+$oxygenColor: #08A6E4;
+$lightGreyColor: #A5A5A5;
+
+.footer {
+    width: 100%;
+    height: 6em;
+    box-shadow: 0 -5px 40px #0000004A;
+
+    &__logo {
+        width: 60%;
+        float: left;
+        text-align: left;
+        margin: 1.3em 0 0 1.3em;
+
+        #foot-title {
+            color: $oxygenColor;
+            font-family: "Raleway";
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
+        #foot-pageRights {
+            color: $lightGreyColor;
+            font-family: "open sans";
+            font-size: 0.7rem;
+            font-weight: 400;
+        }
+    }
+    &__socialMedia{
+        width: 30%;
+        float: right;
+        text-align: center;
+        margin-top: 1.8em;
+
+        .socialMedia__icon {
+            margin: 0.3em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .footer {
+        display: flex;
+        align-items: center;
+
+        &__logo {
+            margin-top: 0;
+            margin-left: 10em;
+        }
+        &__socialMedia {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            width: 10%;
+        }
+    }
+}

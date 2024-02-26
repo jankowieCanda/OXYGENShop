@@ -408,6 +408,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
+    height: 90%;
     justify-content: space-evenly;
     align-items: center;
     padding: 5em;
@@ -418,16 +419,19 @@
   .pricing__basic, .pricing__professional, .pricing__premium {
     width: 25%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: 26.5em;
+    height: 26em;
     padding-top: 1em;
   }
   .pricing__basic .features, .pricing__professional .features, .pricing__premium .features {
     order: 3;
+    width: 80%;
     text-align: center;
   }
   .pricing__basic .price-title, .pricing__professional .price-title, .pricing__premium .price-title {
-    padding: 0 0.6em;
+    width: 100%;
+    padding-top: 0;
   }
   .pricing__basic .prices {
     padding: 0 0.6em 2.8em;
@@ -443,49 +447,20 @@
     margin-bottom: 4.375em;
   }
 }
-/* MOBILE */
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
-}
-
-body {
-  min-width: 320px;
-  text-align: center;
-}
-
-.btn {
-  padding: 1.2em 4em;
-  border-radius: 23px;
-  border: none;
-  background-color: grey;
-  color: #FFFFFF;
-  font-family: "open sans";
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-.amount {
-  font-family: "open sans";
-  font-weight: 300;
-  font-size: 3rem;
-}
-
 .contact {
   width: 90%;
   margin-bottom: 1.25em;
   text-align: left;
 }
-.contact__title, .contact__data, .contact__form {
+.contact__text_title, .contact__text_data, .contact__form {
   margin-bottom: 1.25em;
 }
-.contact__title #anyQuestion, .contact__data #anyQuestion, .contact__form #anyQuestion {
+.contact__text_title #anyQuestion, .contact__text_data #anyQuestion, .contact__form #anyQuestion {
   font-family: "raleway";
   font-weight: 400;
   font-size: 3rem;
 }
-.contact__title p, .contact__data p, .contact__form p {
+.contact__text_title p, .contact__text_data p, .contact__form p {
   display: inline;
   line-height: 27px;
   font-family: "open sans";
@@ -493,18 +468,18 @@ body {
   font-size: 1rem;
   color: #A5A5A5;
 }
-.contact__title img, .contact__data img, .contact__form img {
+.contact__text_title img, .contact__text_data img, .contact__form img {
   width: 27px;
   height: 27px;
   vertical-align: bottom;
 }
-.contact__title #leaveMail, .contact__data #leaveMail, .contact__form #leaveMail {
+.contact__text_title #leaveMail, .contact__text_data #leaveMail, .contact__form #leaveMail {
   font-family: "open sans";
   font-weight: 400;
   font-size: 1rem;
   color: #000000;
 }
-.contact__data-mail, .contact__data-phone {
+.contact__text_data-mail, .contact__text_data-phone {
   padding: 0.3em 0;
 }
 .contact__form {
@@ -563,6 +538,32 @@ body {
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
 }
 
+@media only screen and (min-width: 1000px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .contact__text {
+    margin: 0;
+    width: 40%;
+  }
+  .contact__text_data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .contact__text_data-mail, .contact__text_data-phone {
+    margin-left: 0;
+    margin-right: 1em;
+  }
+  .contact__form {
+    margin: 0;
+    width: 40%;
+  }
+}
 .footer {
   width: 100%;
   height: 6em;
@@ -579,7 +580,6 @@ body {
   font-family: "Raleway";
   font-size: 1.7rem;
   font-weight: 300;
-  line-height: 30px;
 }
 .footer__logo #foot-pageRights {
   color: #A5A5A5;
@@ -593,8 +593,53 @@ body {
   text-align: center;
   margin-top: 1.8em;
 }
-.footer__socialMedia #twitter, .footer__socialMedia #facebook {
+.footer__socialMedia .socialMedia__icon {
   margin: 0.3em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+  .footer__logo {
+    margin-top: 0;
+    margin-left: 10em;
+  }
+  .footer__socialMedia {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    width: 10%;
+  }
+}
+/* MOBILE */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  text-align: center;
+}
+
+.btn {
+  padding: 1.2em 4em;
+  border-radius: 23px;
+  border: none;
+  background-color: grey;
+  color: #FFFFFF;
+  font-family: "open sans";
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.amount {
+  font-family: "open sans";
+  font-weight: 300;
+  font-size: 3rem;
 }
 
 /* DESKTOP */

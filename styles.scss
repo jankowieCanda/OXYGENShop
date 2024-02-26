@@ -5,17 +5,10 @@
 @import 'styles/popular-data.scss';
 @import 'styles/groups.scss';
 @import 'styles/pricing.scss';
+@import 'styles/contact.scss';
+@import 'styles/footer.scss';
 
-$oxygenColor: #08A6E4;
-$basicColor: #FB3B64;
-$proColor: #07ACE6;
-$premiumColor: #55DFB4;
 $whiteColor: #FFFFFF;
-$blackColor: #000000;
-$lightGreyColor: #A5A5A5;
-$priceTitles: #13253B;
-$regPadding: 0 1.5em;
-$bottom: 1.25em;
 
 /* MOBILE */
 
@@ -44,143 +37,6 @@ body {
     font-size: 3rem;
 }
 
-
-
-
-
-.contact {
-    width: 90%;
-    margin-bottom: $bottom;
-    text-align: left;
-
-    &__title, &__data, &__form {
-        margin-bottom: $bottom;
-
-        #anyQuestion {
-            font-family: "raleway";
-            font-weight: 400;
-            font-size: 3rem;
-        }
-        p {
-            display: inline;
-            line-height: 27px;
-            font-family: "open sans";
-            font-weight: 600;
-            font-size: 1rem;
-            color:$lightGreyColor;
-        }
-        img {
-            width: 27px;
-            height: 27px;
-            vertical-align: bottom;
-        }
-        #leaveMail {
-            font-family: "open sans";
-            font-weight: 400;
-            font-size: 1rem;
-            color: $blackColor;
-        }
-    }
-    &__data-mail, &__data-phone {
-        padding: 0.3em 0;
-    }
-    &__form {
-        width: 100%;
-        min-height: 26em;
-        
-        .nameInput, .emailInput, .consentCheck {
-            margin-bottom: $bottom;
-
-            #nameLabel, #emailLabel, input[type=text], input[type=email] {
-                display: block;
-                width: 100%;
-                margin-bottom: $bottom;
-            }
-            #nameLabel, #emailLabel{
-                font-size: 0.7rem;
-                font-weight: 600;
-                font-family: "open sans";
-                color: $oxygenColor;
-                letter-spacing: 0.20rem;
-            }
-            #name, #email {
-                border: none;
-                border-bottom: 1px solid #95989A;
-            }
-            #inputDiv {
-                float: left;
-                width: 10%;
-                margin-right: 0.6em;
-                margin-bottom: $bottom * 10;
-
-                #consent {
-                    border-color: #95989A;
-                    border-radius: 4px;
-                    width: 24px;
-                    height: 24px;
-                    margin-top: 0.3em;
-                }
-            }
-            #labelDiv {
-                width: 90%;
-                margin-right: 0;
-                margin-left: 1.5em;
-
-                #consentLabel {
-                    font-family: "open sans";
-                    font-weight: 400;
-                    color: #707070;
-                    font-size: 0.8rem;
-                }
-            }
-        }
-        .btn--submit-format {
-            padding: 1.5em 8em;
-            border-radius: 35px;
-            background-color: $oxygenColor;
-            float: right;
-            margin-bottom: $bottom;
-            box-shadow: 5px 10px 14px #07ACE629;
-        }
-    }
-}
-.footer {
-    width: 100%;
-    height: 6em;
-    box-shadow: 0 -5px 40px #0000004A;
-
-    &__logo {
-        width: 60%;
-        float: left;
-        text-align: left;
-        margin: 1.3em 0 0 1.3em;
-
-        #foot-title {
-            color: $oxygenColor;
-            font-family: "Raleway";
-            font-size: 1.7rem;
-            font-weight: 300;
-            line-height: 30px;
-        }
-        #foot-pageRights {
-            color: $lightGreyColor;
-            font-family: "open sans";
-            font-size: 0.7rem;
-            font-weight: 400;
-        }
-    }
-    &__socialMedia{
-        width: 30%;
-        float: right;
-        text-align: center;
-        margin-top: 1.8em;
-
-        #twitter, #facebook {
-            margin: 0.3em;
-        }
-    }
-}
-
 /* DESKTOP */
 
 @media only screen and (min-width: 1000px) {
@@ -190,6 +46,4 @@ body {
             width: 90%;
         }
     }
-
-    
 }
