@@ -1,0 +1,113 @@
+$bottom: 1.25em;
+$oxygenColor: #08A6E4;
+$lightGreyColor: #A5A5A5;
+$blackColor: #000000;
+$regPadding: 0 1.5em;
+
+.header {
+    width: 100%;
+    min-height: 5em;
+    box-shadow: 0 3px 6px #0000004A;
+    text-align: center;
+    margin-bottom: $bottom * 5;
+    
+    &__title, &__menu-logo {
+        display: inline;
+        margin-bottom: $bottom;
+    }
+    &__title {
+        width: 70%;
+        float: left;
+        
+        #headTitle {
+            font-family: "raleway";
+            font-weight: 300;
+            font-size: 2rem;
+            margin: 0.5em 0;
+            color: $oxygenColor;
+        }
+    }
+    &__menu-logo {
+        width: 20%;
+        float: right;
+
+        #menuLogo {
+            width: 20px;
+            height: 12px;
+            margin: 1.8em 0;
+        }
+    }
+    &__menu {
+        clear: both;
+        display: none;
+
+        &-nav{
+            margin-bottom: $bottom;
+            padding: 1.5em;
+            text-align: left;
+
+            .navList {
+                list-style: none;
+
+                &__item {
+                    margin-bottom: $bottom;
+
+                    a {
+                        text-decoration: none;
+                        font-family: "open sans";
+                        font-weight: 700;
+                        font-size: 0.7rem;
+                        letter-spacing: 0.2rem;
+                        color: $lightGreyColor;
+                    }
+                    a:hover {
+                        color: $blackColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            width: 40%;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        &__menu-logo {
+            display: none;
+        }
+        &__menu {
+            width: 50%;
+            display: inline;
+            margin: 0;
+
+            &-nav{
+                padding: 0;
+                margin: 0;
+
+                .navList { 
+                    display: flex;
+
+                    &__item {
+                        display: inline-flex;
+                        margin-bottom: 0;
+
+                        a {
+                            padding: 2.7em 0;
+                        }
+                        a:hover {
+                            border-bottom: solid 4px $oxygenColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

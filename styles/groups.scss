@@ -1,0 +1,117 @@
+$basicColor: #FB3B64;
+$proColor: #07ACE6;
+$premiumColor: #55DFB4;
+
+.groups{
+    width: 80%;
+    margin-bottom: $bottom;
+
+    .group1, .group2, .group3 {
+        text-align: left;
+        margin-bottom: $bottom;
+        padding: 0.9em;
+
+        &__img {
+            text-align: center;
+        }
+        &__img, &__title, &__descrip {
+            margin-bottom: $bottom;
+
+            .group-title {
+                font-family: "raleway";
+                font-weight: 400;
+                font-size: 1.9rem;
+            }
+            .group__descrip-txt {
+                font-family: "open sans";
+                font-weight: 400;
+                font-size: 0.9rem;
+            }
+            #macbook {
+                position: absolute;
+                margin-top: 4em;
+                margin-left: 1.5em;
+            }
+            #frame {
+                margin: 1.6em 0 1.6em 7em;
+            }
+            #iphone {
+                position: absolute;
+                margin: 0.5em 0 0 -8.2em;
+            }
+            #ellipse {
+                margin-left: -2em;
+            }
+            #trumpet {
+                position: absolute;
+                margin: 1.6em 0 0 -0.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .groups{
+        width: 100%;
+        
+        .group1 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            width: 90%;
+            
+            &__img{
+                width: 40%;
+                text-align: left;
+
+                #macbook {
+                    margin-left: -2em;
+                }
+                #frame {
+                    margin-left: 9em;
+                    margin-top: -0.5em;
+                }
+            }
+            .group__text {
+                width: 30%;
+                padding-top: 3em;
+
+                .group1__descrip--border-color {
+                    border-bottom: 4px solid $basicColor;
+                }
+            }
+                
+        }
+        .group2, .group3 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 90%;
+
+            &__img {
+                width: 40%;
+                margin: 0;
+
+                #iphone {
+                    margin-left: -20em;
+                    margin-top: 1.5em;
+                }
+                #trumpet {
+                    margin-top: 6em;
+                    margin-left: 4em;
+                }
+            }
+            .group__text {
+                width: 30%;
+                padding-top: 5em;
+
+                .group2__descrip--border-color {
+                    border-bottom: 4px solid $proColor;
+                }
+                .group3__descrip--border-color {
+                    border-bottom: 4px solid $premiumColor;
+                }
+            }
+        }
+    }
+}

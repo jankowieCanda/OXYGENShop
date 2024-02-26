@@ -1,0 +1,169 @@
+$basicColor: #FB3B64;
+$proColor: #07ACE6;
+$premiumColor: #55DFB4;
+$priceTitles: #13253B;
+$bottom: 1.25em;
+
+.pricing {
+    width: 80%;
+    margin-bottom: $bottom;
+
+    &__title {
+        margin-bottom: $bottom;
+
+        .title--pricing-title {
+            font-family: "raleway";
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+    &__btn {
+        width: 100%;
+        clear: both;
+    }
+    &__basic, &__professional, &__premium {
+        width: 90%;
+        margin-bottom: $bottom * 2;
+        border: solid 1px;
+        border-radius: 18px;
+        height: 15em;
+
+        .features{
+            width: 50%;
+            height: 80%;
+            margin-bottom: $bottom;
+            float: right;
+            text-align: left;
+            
+
+            &__list {
+                list-style: none;
+                padding-top: 1em;
+
+
+                .list-item {
+
+                    &__capacity, &__subDom, &__mail, &__licence, &__support {
+                        line-height: 30px;
+                        margin-bottom: math.div($bottom, 2);
+
+                        .feat__item {
+                            display: inline;
+                            font-family: "open sans";
+                            font-weight: 400;
+                            font-size: 0.9rem;
+                            margin-left: 0.3em;
+                        }
+                    }
+                }
+            }
+        }
+        .price-title, .prices {
+            width: 45%;
+            float: left;
+
+            .title--price-title {
+                font-family: "raleway";
+                font-weight: 700;
+                font-size: 1.3rem;
+                color: $priceTitles;
+            }
+            .amount--basic-color {
+                color: $basicColor;
+            }
+            .amount--professional-color {
+                color: $proColor;
+            }
+            .amount--premium-color {
+                color: $premiumColor;
+            }
+            .limitedOffer {
+                font-family: "raleway";
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+        }
+        .price-title{
+            padding: 3.5em 0.6em 0;
+            margin-top: 0.6em;
+        }
+        .prices {
+            padding: 0 0.6em 2em;
+        }
+        .btn--basic-format{
+            background-color: $basicColor;
+        }
+        .btn--professional-format {
+            background-color: $proColor;
+        }
+        .btn--premium-format {
+            background-color: $premiumColor;
+        }
+    }
+    &__basic:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #FB3B6470;
+    }
+    &__professional:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #07ACE670;
+    }
+    &__premium:hover {
+        width: 100%;
+        box-shadow: 5px 10px 27px #55DFB485;
+    }
+    .basic--border-color {
+        border-color: $basicColor;
+    }
+    .professional--border-color {
+        border-color: $proColor;
+    }
+    .premium--border-color {
+        border-color: $premiumColor;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .pricing {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5em;
+
+        &__title {
+            width: 100%;
+        }
+        &__basic, &__professional, &__premium {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            height: 26.5em;
+            padding-top: 1em;
+
+            .features {
+                order: 3;
+                text-align: center;
+            }
+            .price-title {
+                padding: 0 0.6em;
+            }
+        }
+        &__basic .prices {
+            padding: 0 0.6em 2.8em;
+        }
+        &__btn {
+            order: 4;
+        }
+        &__basic:hover, &__professional:hover, &__premium:hover {
+            width: 26%;
+            height: 29.5em;
+
+            .features {
+                margin-bottom: $bottom * 3.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.popular-data {
+    width: 80%;
+    margin-bottom: $bottom;
+
+    &__title {
+        padding: $regPadding;
+        margin-bottom: $bottom*2;
+
+        #data-title {
+            font-family: "raleway";
+            font-weight: 300;
+            font-size: 1.9rem;
+        }
+    }
+    &__column1, &__column2, &__column3 {
+        width: 100%;
+        margin-bottom: $bottom;
+
+        .column1__img, .column1__descrip, .column2__img, .column2__descrip, .column3__img, .column3__descrip {
+            width: 60%;
+            margin-bottom: math.div($bottom, 2);
+
+            .quantity {
+                font-family: "raleway";
+                font-weight: 800;
+                font-size: 1.3rem;
+                letter-spacing: 0.4rem;
+                margin-bottom: math.div($bottom, 2);
+            }
+            .quantity-descrip {
+                font-family: "raleway";
+                font-weight: 400;
+                font-size: 1.05rem;
+                color: $lightGreyColor;
+            }
+            .ellipse_img {
+                &--ellipse1-position, &--ellipse3-position{
+                    margin-left: -1em;
+                }
+                &--ellipse2-position{
+                    margin-left: -0.9em;
+                }
+            }
+            .person-img {
+                position: absolute;
+                margin-left: -2em;
+                margin-top: 0.2em;
+            }
+            .eye-img {
+                position: absolute;
+                margin-left: -2.5em;
+                margin-top: 0.8em;
+            }
+            .catalog-img {
+                position: absolute;
+                margin-left: -1.9em;
+                margin-top: 0.4em;
+            }
+            
+        };
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .popular-data {
+        width: 80%;
+        margin-bottom: $bottom;
+        display: flex;
+        flex-wrap: wrap;
+    
+        &__title {
+            width: 100%;
+        }
+        &__column1, &__column2, &__column3 {
+            width: 30%;
+        }
+    }
+}

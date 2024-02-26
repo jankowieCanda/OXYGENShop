@@ -1,0 +1,33 @@
+$basicColor: #FB3B64;
+
+.opening-section {
+    width: 80%;
+    margin-bottom: $bottom;
+
+    &__title {
+        margin-bottom: $bottom;
+
+        h2{
+            font-family: "raleway";
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+    &__descrip {
+        padding: $regPadding;
+        margin-bottom: $bottom;
+
+        p {
+            font-family: "open sans";
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    .btn--section-opening {
+        padding: 1.5em 5.5em;
+        border-radius: 40px;
+        background-color: $oxygenColor;
+        box-shadow: 5px 10px 14px #07ACE629;
+        font-size: 1rem;
+    }
+}
