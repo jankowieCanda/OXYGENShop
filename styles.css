@@ -613,7 +613,6 @@
     width: 10%;
   }
 }
-/* MOBILE */
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -642,7 +641,15 @@ body {
   font-size: 3rem;
 }
 
-/* DESKTOP */
+#pageScroll {
+  display: none;
+  height: 0.3em;
+  position: fixed;
+  background-color: #08A6E4;
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
+}
+
 @media only screen and (min-width: 1000px) {
   .main__img .image {
     width: 90%;
