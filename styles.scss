@@ -28,6 +28,7 @@ body {
     font-family: "open sans";
     font-size: 0.85rem;
     font-weight: 700;
+    cursor: pointer;
 }
 .amount {
     font-family: "open sans";
@@ -42,6 +43,22 @@ body {
     border-top-right-radius: 4em;
     border-bottom-right-radius: 4em;
 }
+.returnToTop{
+    text-align: right;
+    margin-right: 5em;
+    margin-bottom: $bottom;
+    
+
+    .btn_returnTop {
+        border-radius: 50%;
+        width: 4em;
+        height: 4em;
+        padding: 0;
+        background-color: $oxygenColor;
+        box-shadow: 5px 5px 2px #07ACE629;
+    }
+}
+
 
 @media only screen and (min-width: 1000px) {
 
