@@ -2,6 +2,8 @@ const bodyHeight = document.body.offsetHeight;
 const windowHeight = window.innerHeight;
 const totalToScroll = bodyHeight - windowHeight;
 
+window.addEventListener('scroll', myPercentageScroll);
+
 
 function myPercentageScroll() {
     let pageScroll = document.getElementById('pageScroll');
