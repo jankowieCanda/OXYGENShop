@@ -6,7 +6,8 @@
     <title>OXYGEN Shop</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./scripts/header.js" defer></script>
-    <script src="./scripts/pageScroll.js" defer></script>
+    <script src="./scripts/currencySelect.js" defer></script>
+    <script src="./scripts/currencyFetch.js" defer></script>
 </head>
 <body onscroll="myPercentageScroll()">
     <div class="container">
@@ -206,7 +207,7 @@
                     <h3 class="title title--price-title">Basic</h3>
                 </div>
                 <div class="prices">
-                    <p class="amount amount--basic-color">$0</p>
+                    <p class="amount amount--basic-color" id="basic"></p>
                 </div>
                 <div class="pricing__btn">
                     <button class="btn btn--basic-format">Begin</button>
@@ -251,7 +252,7 @@
                     <h3 class="title title--price-title">Professional</h3>
                 </div>
                 <div class="prices">
-                    <p class="amount amount--professional-color">$25</p>
+                    <p class="amount amount--professional-color" id="professional"></p>
                     <p class="limitedOffer">Limited offer</p>
                 </div>
                 <div class="pricing__btn">
@@ -297,7 +298,7 @@
                     <h3 class="title title--price-title">Premium</h3>
                 </div>
                 <div class="prices">
-                    <p class="amount amount--premium-color">$60</p>
+                    <p class="amount amount--premium-color" id="premium"></p>
                     <p class="limitedOffer">Limited offer</p>
                 </div>
                 <div class="pricing__btn">
