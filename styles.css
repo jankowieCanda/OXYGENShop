@@ -777,9 +777,80 @@ body {
   transform: scale(0.9);
 }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 166, 228, 0.1607843137);
+  margin-top: 1em;
+  border: none;
+  border-radius: 0.5em;
+}
+.modal__div {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 80%;
+  top: 35em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+.modal__title {
+  font-family: "raleway";
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 1.5em 0 0.5em;
+  color: #08A6E4;
+}
+.modal__subscriptionForm {
+  width: 80%;
+  padding: 0.5em;
+  border: 2px solid #08A6E4;
+  border-radius: 0.5em;
+  margin-bottom: 1.25em;
+}
+.modal #subscriptMail {
+  display: block;
+  max-width: 70%;
+  margin-top: 0.5 em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-family: "open sans";
+  font-size: 0.85rem;
+  border: none;
+  border-bottom: 1px solid #95989A;
+}
+.modal .btn-subscribeForm {
+  width: 7em;
+  height: 2.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #08A6E4;
+}
+.modal .closeIcon {
+  font-family: "open sans";
+  font-style: normal;
+  font-size: medium;
+  position: absolute;
+  right: 0.5em;
+  background-color: #FB3B64;
+  color: #FFFFFF;
+  width: 1.5em;
+  height: 1.5em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 3px rgba(251, 59, 100, 0.4392156863);
+  cursor: pointer;
+}
+.modal .closeIcon:active {
+  transform: scale(0.9);
+}
+
 @media only screen and (min-width: 1000px) {
   .main__img .image {
     width: 90%;
+  }
+  .modal__div {
+    max-width: 45%;
+    top: 30em;
   }
 }
 
