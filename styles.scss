@@ -8,6 +8,7 @@
 @import 'styles/contact.scss';
 @import 'styles/footer.scss';
 @import 'styles/currencySelect.scss';
+@import 'styles/slider.scss';
 
 $whiteColor: #FFFFFF;
 
@@ -31,13 +32,15 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+.btn:active {
+    transform: scale(0.9);
+}
 .amount {
     font-family: "open sans";
     font-weight: 300;
     font-size: 3rem;
 }
 #pageScroll {
-    display: none;
     height: 0.3em;
     position: fixed;
     background-color: $oxygenColor;
@@ -57,6 +60,9 @@ body {
         padding: 0;
         background-color: $oxygenColor;
         box-shadow: 5px 5px 2px #07ACE629;
+    }
+    .btn_returnTop:active {
+        transform: scale(0.9);
     }
 }
 
