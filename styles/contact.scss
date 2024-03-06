@@ -36,7 +36,8 @@
     }
     &__form {
         width: 100%;
-        min-height: 26em;
+        min-height: 25em;
+        position: relative;
         
         .nameInput, .emailInput, .consentCheck {
             margin-bottom: $bottom;
@@ -58,10 +59,9 @@
                 border-bottom: 1px solid #95989A;
             }
             #inputDiv {
-                float: left;
-                width: 10%;
-                margin-right: 0.6em;
-                margin-bottom: $bottom * 10;
+                position: absolute;
+                left: 1em;
+                margin-bottom: $bottom * 5;
 
                 #consent {
                     border-color: #95989A;
@@ -72,9 +72,9 @@
                 }
             }
             #labelDiv {
-                width: 90%;
-                margin-right: 0;
-                margin-left: 1.5em;
+                position: absolute;
+                width: 80%;
+                left: 3.5em;
 
                 #consentLabel {
                     font-family: "open sans";
@@ -85,10 +85,12 @@
             }
         }
         .btn--submit-format {
+            position: absolute;
+            bottom: -4em;
+            right: 0.5em;
             padding: 1.5em 8em;
             border-radius: 35px;
             background-color: $oxygenColor;
-            float: right;
             margin-bottom: $bottom;
             box-shadow: 5px 10px 14px #07ACE629;
         }

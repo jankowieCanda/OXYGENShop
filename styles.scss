@@ -46,8 +46,9 @@ body {
 }
 .returnToTop{
     text-align: right;
-    margin-right: 5em;
+    margin-right: 0.5em;
     margin-bottom: $bottom;
+    margin-top: 5em;
     
 
     .btn_returnTop {
@@ -68,4 +69,8 @@ body {
             width: 90%;
         }
     }
+    .returnToTop{
+        margin-right: 3em;
+    }
+    
 }

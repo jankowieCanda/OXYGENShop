@@ -1,3 +1,4 @@
+$whiteColor: #FFFFFF;
 $basicColor: #FB3B64;
 $proColor: #07ACE6;
 $premiumColor: #55DFB4;
@@ -18,40 +19,40 @@ $bottom: 1.25em;
         }
     }
     &__btn {
-        width: 100%;
-        clear: both;
+        position: relative;
+        bottom: -10em;
     }
     &__basic, &__professional, &__premium {
-        width: 90%;
         margin-bottom: $bottom * 2;
         border: solid 1px;
         border-radius: 18px;
-        height: 15em;
+        min-height: 15em;
 
         .features{
-            width: 50%;
-            height: 80%;
+            position: relative;
             margin-bottom: $bottom;
-            float: right;
             text-align: left;
+            padding: 1em;
             
 
             &__list {
+                width: 40%;
                 list-style: none;
-                padding-top: 1em;
+                position: absolute;
+                right: 0.5em;
+                top: 2em;
 
 
                 .list-item {
 
                     &__capacity, &__subDom, &__mail, &__licence, &__support {
-                        line-height: 30px;
                         margin-bottom: math.div($bottom, 2);
 
                         .feat__item {
                             display: inline;
                             font-family: "open sans";
                             font-weight: 400;
-                            font-size: 0.9rem;
+                            font-size: 0.7rem;
                             margin-left: 0.3em;
                         }
                     }
@@ -59,8 +60,8 @@ $bottom: 1.25em;
             }
         }
         .price-title, .prices {
-            width: 45%;
-            float: left;
+            position: absolute;
+            width: 35%;
 
             .title--price-title {
                 font-family: "raleway";
@@ -84,11 +85,13 @@ $bottom: 1.25em;
             }
         }
         .price-title{
-            padding: 3.5em 0.6em 0;
-            margin-top: 0.6em;
+            left: 3em;
+            margin-bottom: $bottom;
+            margin-top: 1em;
         }
         .prices {
-            padding: 0 0.6em 2em;
+            left: 2.8em;
+            margin-top: 2em;
         }
         .btn--basic-format{
             background-color: $basicColor;
@@ -99,6 +102,9 @@ $bottom: 1.25em;
         .btn--premium-format {
             background-color: $premiumColor;
         }
+    }
+    &__basic .prices {
+        padding-bottom: 0.934em;
     }
     &__basic:hover {
         width: 100%;
@@ -138,36 +144,51 @@ $bottom: 1.25em;
             width: 100%;
         }
         &__basic, &__professional, &__premium {
-            width: 25%;
             display: flex;
-            justify-content: center;
+            width: 30%;
+            justify-content: space-around;
+            align-items: center;
             flex-direction: column;
-            height: 26em;
-            padding-top: 1em;
-
+            padding: 2em;
+            height: max-content;
+            
             .features {
                 order: 3;
-                width: 80%;
                 text-align: center;
+                padding: 0;
+                margin: 0;
+                margin-bottom: $bottom;
+
+                &__list {
+                    width: 90%;
+                    position: static; 
+                    margin: 0;   
+    
+                    .list-item {
+                        margin-bottom: 0.5em;
+    
+                        &__capacity, &__subDom, &__mail, &__licence, &__support {
+                            margin: 0;
+                        }
+                    }
+                }
             }
-            .price-title {
-                width: 100%;
-                padding-top: 0;
+            .price-title, .prices {
+                position: static;
+                width: 90%;
+                margin: 0;
+                margin-bottom: $bottom;
+
             }
-        }
-        &__basic .prices {
-            padding: 0 0.6em 2.8em;
         }
         &__btn {
             order: 4;
+            position: static;
+            margin-bottom: -3.5em;
         }
         &__basic:hover, &__professional:hover, &__premium:hover {
-            width: 26%;
-            height: 29.5em;
-
-            .features {
-                margin-bottom: $bottom * 3.5;
-            }
+            width: 31%;
+            height: 26em;
         }
     }
 }
