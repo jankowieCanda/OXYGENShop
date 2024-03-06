@@ -504,6 +504,9 @@
 .contact__form .nameInput #name, .contact__form .nameInput #email, .contact__form .emailInput #name, .contact__form .emailInput #email, .contact__form .consentCheck #name, .contact__form .consentCheck #email {
   border: none;
   border-bottom: 1px solid #95989A;
+  font-family: "open sans";
+  font-size: 1rem;
+  color: #000000;
 }
 .contact__form .nameInput #inputDiv, .contact__form .emailInput #inputDiv, .contact__form .consentCheck #inputDiv {
   float: left;

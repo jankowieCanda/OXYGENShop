@@ -1,5 +1,6 @@
 const modalDialog = document.getElementById('modalDialog');
 const percentToModal = 25;
+let subscription = false;
 
 function createModal() {
     let div = document.createElement('div');
@@ -14,9 +15,10 @@ function createModal() {
     title.innerHTML = 'Subscribe to Newsletter!!';
     let form = document.createElement('form');
     form.className = 'modal__subscriptionForm'
-    form.method = 'POST';
+    form.method = 'get';
     form.action = '';
     form.name = 'subscribeForm';
+    form.id = 'subscribeForm';
     let input = document.createElement('input');
     input.type = 'email';
     input.name = 'subscriptMail';
@@ -26,7 +28,6 @@ function createModal() {
     label.htmlFor = 'subscriptMail';
     let submit = document.createElement('input');
     submit.type = 'submit';
-    // submit.formMethod = 'dialog';
     submit.className = 'btn btn-subscribeForm';
     submit.value = 'Subscribe';
 
@@ -38,6 +39,7 @@ function createModal() {
 
 createModal();
 
+let subscribeForm = document.getElementById('subscribeForm');
 let subscriptMail = document.getElementById('subscriptMail');
 let modalDiv = document.getElementById('subscription');
 let closeModal = document.getElementById('closeModal');
@@ -46,7 +48,7 @@ let timeOut = setTimeout(() => {
     window.addEventListener('load', modalDialog.showModal())
 }, 5000);
 
-if(localStorage.getItem('modalON') === 'true' || sessionStorage.getItem('modalON') === 'true') {
+if(localStorage.getItem('modalON') === 'true') {
     clearTimeout(timeOut);
 }
 
@@ -61,20 +63,40 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// modalDialog.addEventListener('click', () => {
-//     modalDialog.close();
-// });
-
 closeModal.addEventListener('click', () => {
     modalDialog.close();
-})
+});
 
 modalDialog.addEventListener('close', () => {
     localStorage.setItem('modalON', 'true');
-    sessionStorage.setItem('modalON', 'true');
-})
+});
 
+// subscribeForm.addEventListener('submit', preventDef, false);
+subscribeForm.addEventListener('submit', subscribeFormValidation);
 
+function subscribeFormValidation() {
+    let subscribeFormData = {};
+    let input = subscriptMail.value;
+    if(input !== '' && regExpMail.test(input)) {
+        subscribeFormData.email = input;
+        subscription = true;
+        modalDialog.close();
+        
+    } else {
+        subscription = false;
+        subscriptMail.style.borderBottomColor = 'red';
+    }
+
+    subscribeForm.reset();
+    // console.log(subscribeFormData);
+    return subscribeFormData;
+}
+
+if(subscription) {
+    window.addEventListener('click', () => {
+         modalDialog.close();
+    });
+}
 
 
 
