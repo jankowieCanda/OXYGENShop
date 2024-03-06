@@ -5,14 +5,15 @@ const inputEmail = document.getElementById('email');
 const checkBox = document.getElementById('consent');
 const minLength = 2;
 const maxLength = 100;
-const regExpMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const regExpMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+let checkBoxChecked = true;
+const postUrl = 'https://jsonplaceholder.typicode.com/posts';
 
 
 
-contactForm.addEventListener('submit', preventDef, false);
+// contactForm.addEventListener('submit', preventDef, false);
 contactForm.addEventListener('submit', contactFormValidation);
 
-let checkBoxChecked = true;
 checkBox.addEventListener('click', () => {
 
     if(checkBox.checked) {
@@ -20,20 +21,18 @@ checkBox.addEventListener('click', () => {
     } else {
         checkBoxChecked = false;
     }
-    console.log(checkBoxChecked)
+    // console.log(checkBoxChecked)
 });
 
 
-function preventDef(event) {
-    event.preventDefault();
-  }
+// function preventDef(event) {
+//     event.preventDefault();
+// }
 
 function contactFormValidation() {
     let contactFormData = {};
     let name = inputName.value;
-    console.log(name);
     let email = inputEmail.value;
-    console.log(email);
     let nameOK = false;
     let mailOK = false;
 
@@ -42,7 +41,6 @@ function contactFormValidation() {
     } else {
         nameOK = false
         inputName.style.borderBottomColor = 'red';
-
     }
 
     if(email !== '' && regExpMail.test(email)){
@@ -56,13 +54,34 @@ function contactFormValidation() {
         contactFormData.name = name;
         contactFormData.email = email;
         contactFormData.consent = checkBoxChecked;
-        contactForm.reset();
+        // console(checkBoxChecked);
         inputName.style.borderBottomColor = '#95989A';
         inputEmail.style.borderBottomColor = '#95989A';
+
+        fetch(postUrl, {
+            method: 'POST',
+            body: JSON.stringify(contactFormData),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+              },
+        })
+        .then(response => {
+            if(response.ok){
+                return response.json();
+            } else {
+                // alert('API - Request Fail!');
+                console.log(`Request Fail! - ERROR: ${response.status}`);
+            }
+        })
+        .then(data => console.log(data));
+
+        contactForm.reset();
+    } else {
+        console.log('ERROR! Faltan campos por completar');
     }
+
     
-    
-    console.log(contactFormData);
+    // console.log(contactFormData);
     return contactFormData;
 }
 

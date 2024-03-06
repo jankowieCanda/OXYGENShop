@@ -15,8 +15,8 @@ function createModal() {
     title.innerHTML = 'Subscribe to Newsletter!!';
     let form = document.createElement('form');
     form.className = 'modal__subscriptionForm'
-    form.method = 'get';
-    form.action = '';
+    form.method = 'post';
+    form.action = postUrl;
     form.name = 'subscribeForm';
     form.id = 'subscribeForm';
     let input = document.createElement('input');
@@ -85,6 +85,25 @@ function subscribeFormValidation() {
     } else {
         subscription = false;
         subscriptMail.style.borderBottomColor = 'red';
+    }
+
+    if(subscription) {
+        fetch(postUrl, {
+            method: 'POST',
+            body: JSON.stringify(subscribeFormData),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then(response => {
+            if(response.ok){
+                return response.json();
+            } else {
+                // alert('API - Request Fail!');
+                console.log(`Request Fail! - ERROR: ${response.status}`);
+            }
+        })
+        .then(data => console.log(data));
     }
 
     subscribeForm.reset();
