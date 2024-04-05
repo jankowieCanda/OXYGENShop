@@ -8,6 +8,7 @@
 @import 'styles/contact.scss';
 @import 'styles/footer.scss';
 @import 'styles/currencySelect.scss';
+@import 'styles/slider.scss';
 
 $whiteColor: #FFFFFF;
 
@@ -31,13 +32,15 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+.btn:active {
+    transform: scale(0.9);
+}
 .amount {
     font-family: "open sans";
     font-weight: 300;
     font-size: 3rem;
 }
 #pageScroll {
-    display: none;
     height: 0.3em;
     position: fixed;
     background-color: $oxygenColor;
@@ -59,6 +62,76 @@ body {
         background-color: $oxygenColor;
         box-shadow: 5px 5px 2px #07ACE629;
     }
+    .btn_returnTop:active {
+        transform: scale(0.9);
+    }
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: #08A6E429;
+    margin-top: 1em;
+    border: none;
+    border-radius: 0.5em;
+
+    &__div {
+        position: relative;
+        background-color: $whiteColor;
+        width: 80%;
+        top: 35em;
+        border-radius: 0.5em;
+        padding: 0.5em
+    }
+    &__title {
+        font-family: "raleway";
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin: 1.5em 0 0.5em;
+        color: $oxygenColor;
+    }
+    &__subscriptionForm {
+        width: 80%;
+        padding: 0.5em;
+        border: 2px solid $oxygenColor;
+        border-radius: 0.5em;
+        margin-bottom: $bottom;
+    }
+    #subscriptMail {
+        display: block;
+        max-width: 70%;
+        margin-top: 0.5 em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-family: 'open sans';
+        font-size: 0.85rem;
+        border: none;
+        border-bottom: 1px solid #95989A;
+    }
+    .btn-subscribeForm {
+        width: 7em;
+        height: 2.5em;
+        margin: 0.5em;
+        padding: 0.5em;
+        background-color: $oxygenColor;
+    }
+    .closeIcon {
+        font-family: 'open sans';
+        font-style: normal;
+        font-size: medium;
+        position: absolute;
+        right: 0.5em;
+        background-color: $basicColor;
+        color: $whiteColor;
+        width: 1.5em;
+        height: 1.5em;
+        margin-bottom: 0.5em;
+        border-radius: 0.5em;
+        box-shadow: 3px 3px 3px #FB3B6470;
+        cursor: pointer;
+    }
+    .closeIcon:active {
+        transform: scale(0.9);
+    }
 }
 
 
@@ -73,4 +146,11 @@ body {
         margin-right: 3em;
     }
     
+    .modal {
+
+        &__div {
+            max-width: 45%;
+            top: 30em;
+        }
+    }
 }

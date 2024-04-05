@@ -7,8 +7,7 @@ window.addEventListener('scroll', myPercentageScroll);
 
 function myPercentageScroll() {
     let pageScroll = document.getElementById('pageScroll');
-    let scroll = (window.scrollY / totalToScroll) * 100;
-    let scrollPercent = scroll.toFixed(0);
+    let scrollPercent = getScrollPercent();
 
     if(scrollPercent == 0) {
         pageScroll.style.display = 'none';
@@ -16,4 +15,11 @@ function myPercentageScroll() {
         pageScroll.style.display = 'block';
         pageScroll.style.width = `${scrollPercent}%`;
     }
+}
+
+function getScrollPercent() {
+    let scroll = (window.scrollY / totalToScroll) * 100;
+    let scrollPercent = scroll.toFixed(0);
+
+    return scrollPercent;
 }
