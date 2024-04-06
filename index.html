@@ -8,11 +8,19 @@
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/currencySelect.js" defer></script>
     <script src="./scripts/currencyFetch.js" defer></script>
+    <script src="./scripts/Slider.js" defer></script>
+    <script src="./scripts/returnToTop.js" defer></script>
     <script src="./scripts/pageScroll.js" defer></script>
+    <script src="./scripts/contactFormValida.js" defer></script>
+    <script src="./scripts/subscribeModal.js" defer></script>
+    
+    
+
 </head>
-<body onscroll="myPercentageScroll()">
+<body>
     <div class="container">
         <div id="pageScroll"></div>
+        <dialog class="modal" id="modalDialog"></dialog>
         <header class="header">
             <div class="header__title">
                 <h1 id="headTitle">OXYGENShop</h1>
@@ -328,7 +336,7 @@
                     </div>
                 </div>
             </div>
-            <form class="contact__form" action="" method="post">
+            <form class="contact__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                 <div class="nameInput">
                     <label id="nameLabel" for="name">NAME</label>
                     <input type="text" name="name" id="name">
@@ -349,7 +357,7 @@
             </form>
         </section>
         <div class="returnToTop">
-            <button class="btn btn_returnTop">&#11014;</button>
+            <button class="btn btn_returnTop" id="returnTop">&#11014;</button>
         </div>
         <footer class="footer">
             <div class="footer__logo">
